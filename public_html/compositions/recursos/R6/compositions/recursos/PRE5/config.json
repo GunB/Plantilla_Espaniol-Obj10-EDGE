@@ -1,0 +1,28 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Seleccione cuáles de las siguientes palabras son femeninas.",
+    "picks": {
+        "1": {
+            "descripcion": "pocillo",
+            "esRespuesta": false
+        },
+        "2": {
+            "descripcion": "vaso",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "nevera",
+            "esRespuesta": true
+        },
+        "4": {
+            "descripcion": "inodoro",
+            "esRespuesta": false
+        }
+        ,
+        "5": {
+            "descripcion": "silla",
+            "esRespuesta": true
+        }
+        
+    }
+}

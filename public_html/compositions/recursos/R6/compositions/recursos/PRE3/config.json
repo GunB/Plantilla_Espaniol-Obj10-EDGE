@@ -1,0 +1,23 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Seleccione cuál es el deletreo adecuado para la palabra del audio.",
+    "picks": {
+        "1": {
+            "descripcion": "be - a - jota - a - ere- o",
+            "esRespuesta": false
+        },
+        "2": {
+            "descripcion": "te - a - jota - a - ere -a",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "pe - a - jota - a - ere- a",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "pe - a - jota - a - ere - o",
+            "esRespuesta": true
+        }      
+        
+    }
+}

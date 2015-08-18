@@ -1,0 +1,23 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Seleccione el grupo de palabras que incluye solo sustantivos masculinos.",
+    "picks": {
+        "1": {
+            "descripcion": "zorro, gata, perro",
+            "esRespuesta": false
+        },
+        "2": {
+            "descripcion": "perro, gato, loba",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "cabro, zorro, pato",
+            "esRespuesta": true
+        },
+        "4": {
+            "descripcion": "pata, perra, zorra",
+            "esRespuesta": false
+        }      
+        
+    }
+}

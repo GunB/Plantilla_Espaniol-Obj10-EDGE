@@ -1,0 +1,23 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Escuche el audio y seleccione la opción que contiene las  palabras mencionadas.",
+    "picks": {
+        "1": {
+            "descripcion": "toro-casa",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "coro-tasa",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "loro-masa",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "poro-mesa",
+            "esRespuesta": false
+        }      
+        
+    }
+}

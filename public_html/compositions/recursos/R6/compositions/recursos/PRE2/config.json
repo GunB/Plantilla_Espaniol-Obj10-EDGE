@@ -1,0 +1,23 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Escuche el audio y seleccione la imagen que corresponde al deletreo.",
+    "picks": {
+        "1": {
+            "descripcion": "corona",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "carruaje",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "leona",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "sofá",
+            "esRespuesta": false
+        }
+        
+    }
+}

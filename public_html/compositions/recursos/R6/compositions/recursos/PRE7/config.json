@@ -1,0 +1,23 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Escuche los audios y seleccione cuál no corresponde con un sustantivo invariable.",
+    "picks": {
+        "1": {
+            "descripcion": "estudiante",
+            "esRespuesta": false
+        },
+        "2": {
+            "descripcion": "profesor",
+            "esRespuesta": true
+        },
+        "3": {
+            "descripcion": "artista",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "gobernante",
+            "esRespuesta": false
+        }      
+        
+    }
+}

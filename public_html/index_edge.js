@@ -67,7 +67,7 @@
                         {
                             id: 'contenedor_portada',
                             symbolName: 'overlay_portada',
-                            display: 'none',
+                            display: 'block',
                             type: 'rect',
                             rect: ['0', '136', '1920', '944', 'auto', 'auto']
                         },
@@ -217,31 +217,36 @@
                             id: 'btnr_3',
                             symbolName: 'btnr_3',
                             type: 'rect',
-                            rect: ['775px', '895px', 'undefined', 'undefined', 'auto', 'auto']
+                            rect: ['775px', '895px', 'undefined', 'undefined', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'btnr_4',
                             symbolName: 'btnr_4',
                             type: 'rect',
-                            rect: ['901px', '912px', 'undefined', 'undefined', 'auto', 'auto']
+                            rect: ['901px', '912px', 'undefined', 'undefined', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'btnr_5',
                             symbolName: 'btnr_5',
                             type: 'rect',
-                            rect: ['1027px', '931px', 'undefined', 'undefined', 'auto', 'auto']
+                            rect: ['1027px', '931px', 'undefined', 'undefined', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'btnr_6',
                             symbolName: 'btnr_6',
                             type: 'rect',
-                            rect: ['1153px', '912px', 'undefined', 'undefined', 'auto', 'auto']
+                            rect: ['1153px', '912px', 'undefined', 'undefined', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'btnr_7',
                             symbolName: 'btnr_7',
                             type: 'rect',
-                            rect: ['1661px', '945px', 'undefined', 'undefined', 'auto', 'auto']
+                            rect: ['1661px', '945px', 'undefined', 'undefined', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'tool_empecemos',
@@ -284,6 +289,13 @@
                             symbolName: 'tool_resultados',
                             type: 'rect',
                             rect: ['1640px', '874px', 'undefined', 'undefined', 'auto', 'auto']
+                        },
+                        {
+                            id: 'container_overlay',
+                            symbolName: 'container_overlay',
+                            display: 'none',
+                            type: 'rect',
+                            rect: ['0', '0', '1920', '1080', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -300,12 +312,12 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid3",
+                            "eid43",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${overlay}",
+                            "${container_overlay}",
                             'none',
                             'none'
                         ],
@@ -316,6 +328,16 @@
                             0,
                             "linear",
                             "${contenedor_portada}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid3",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${overlay}",
                             'none',
                             'none'
                         ]
@@ -394,13 +416,13 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '649px', '50px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(255,255,255,1.00)', '700', 'none', 'normal', 'break-word', 'normal'],
-                            type: 'text',
-                            textStyle: ['', '', '', '', 'none'],
-                            id: 'Titulo',
                             text: '<p style=\"margin: 0px; font-family: source-sans-pro, sans-serif; font-weight: 600; font-style: normal; text-decoration: none; font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-align: left; text-indent: 0px; line-height: normal;\">Evaluación</p>',
+                            id: 'Titulo',
+                            textStyle: ['', '', '', '', 'none'],
                             align: 'left',
-                            rect: ['0px', '0px', '649px', '50px', 'auto', 'auto']
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -457,13 +479,13 @@
                 content: {
                     dom: [
                         {
+                            type: 'text',
                             rect: ['0px', '0px', '632px', '41px', 'auto', 'auto'],
-                            font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,182,0,1.00)', '500', 'none', 'normal', 'break-word', 'normal'],
-                            text: '<p style=\"margin: 0px;\">​Español &gt; Pre A1 Introductorio &gt; Mi contexto</p>',
-                            id: 'Ruta',
                             textStyle: ['', '', '', '', 'none'],
+                            id: 'Ruta',
+                            text: '<p style=\"margin: 0px;\">​Español &gt; Pre A1 Introductorio &gt; Mi contexto</p>',
                             align: 'right',
-                            type: 'text'
+                            font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,182,0,1.00)', '500', 'none', 'normal', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -704,13 +726,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                type: 'text',
                                 align: 'center',
                                 id: 'TextCopy',
-                                textStyle: ['', '', '', '', 'none'],
                                 text: '<p style=\"margin: 0px;\">​Accesibilidad</p>',
-                                rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto']
+                                textStyle: ['', '', '', '', 'none'],
+                                type: 'text'
                             }]
                         }
                     ],
@@ -807,13 +829,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                type: 'text',
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'TextCopy',
-                                textStyle: ['', '', '', '', 'none'],
                                 text: '<p style=\"margin: 0px;\">​Información</p>',
-                                type: 'text'
+                                textStyle: ['', '', '', '', 'none'],
+                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap']
                             }]
                         }
                     ],
@@ -902,13 +924,13 @@
                             fill: ['rgba(79,45,110,1.00)'],
                             c: [
                             {
+                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
                                 type: 'text',
-                                rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
-                                text: '<p style=\"margin: 0px;\">​Pantalla completa</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Pantalla completa</p>',
                                 align: 'center',
-                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap']
+                                rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto']
                             },
                             {
                                 rect: ['229px', '19px', '15px', '15px', 'auto', 'auto'],
@@ -1005,13 +1027,13 @@
                             fill: ['rgba(79,45,110,1.00)'],
                             c: [
                             {
+                                type: 'text',
                                 rect: ['9px', '8px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                textStyle: ['', '', '', '', 'none'],
-                                id: 'TextCopy',
                                 text: '<p style=\"margin: 0px;\">​Ayuda</p>',
+                                id: 'TextCopy',
+                                textStyle: ['', '', '', '', 'none'],
                                 align: 'center',
-                                type: 'text'
+                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap']
                             },
                             {
                                 rect: ['83px', '19px', '15px', '15px', 'auto', 'auto'],
@@ -1116,13 +1138,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                type: 'text',
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                textStyle: ['', '', '', '', 'none'],
-                                id: 'TextCopy',
                                 text: '<p style=\"margin: 0px;\">​Audio</p>',
+                                id: 'TextCopy',
+                                textStyle: ['', '', '', '', 'none'],
                                 align: 'center',
-                                type: 'text'
+                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap']
                             },
                             {
                                 rect: ['83px', '19px', '15px', '15px', 'auto', 'auto'],
@@ -1133,13 +1155,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                type: 'text',
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                textStyle: ['', '', '', '', 'none'],
-                                id: 'Text',
                                 text: '<p style=\"margin: 0px;\">​Audio</p>',
+                                id: 'Text',
+                                textStyle: ['', '', '', '', 'none'],
                                 align: 'center',
-                                type: 'text'
+                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap']
                             }]
                         }
                     ],
@@ -1228,13 +1250,13 @@
                             boxShadow: ['', 3, 3, 6, 0, 'rgba(0,0,0,0.36)'],
                             c: [
                             {
+                                type: 'text',
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'TextCopy',
-                                textStyle: ['', '', '', '', 'none'],
                                 text: '<p style=\"margin: 0px;\">​Créditos</p>',
-                                type: 'text'
+                                textStyle: ['', '', '', '', 'none'],
+                                font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap']
                             },
                             {
                                 transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
@@ -1321,45 +1343,45 @@
                             fill: ['rgba(0,0,0,0.47)'],
                             c: [
                             {
-                                type: 'image',
-                                id: 'accesi',
-                                rect: ['8px', '486px', '91px', '91px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.9', '0.9']],
+                                id: 'accesi',
+                                type: 'image',
+                                rect: ['8px', '486px', '91px', '91px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/accesi.png', '0px', '0px']
                             },
                             {
-                                type: 'image',
-                                id: 'audio',
-                                rect: ['8px', '295px', '91px', '91px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.9', '0.9']],
+                                id: 'audio',
+                                type: 'image',
+                                rect: ['8px', '295px', '91px', '91px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/audio.png', '0px', '0px']
                             },
                             {
-                                type: 'image',
-                                id: 'ayuda_2',
-                                rect: ['8px', '199px', '91px', '91px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.9', '0.9']],
+                                id: 'ayuda_2',
+                                type: 'image',
+                                rect: ['8px', '199px', '91px', '91px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/ayuda%20%282%29.png', '0px', '0px']
                             },
                             {
-                                type: 'image',
-                                id: 'info',
-                                rect: ['8px', '390px', '91px', '91px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.9', '0.9']],
+                                id: 'info',
+                                type: 'image',
+                                rect: ['8px', '390px', '91px', '91px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/info.png', '0px', '0px']
                             },
                             {
-                                type: 'image',
-                                id: 'creditos',
-                                rect: ['8px', '106px', '91px', '91px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.9', '0.9']],
+                                id: 'creditos',
+                                type: 'image',
+                                rect: ['8px', '106px', '91px', '91px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/creditos.png', '0px', '0px']
                             },
                             {
-                                type: 'image',
-                                id: 'Full_screen',
-                                rect: ['-71px', '-70px', '250px', '250px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.25', '0.25']],
+                                id: 'Full_screen',
+                                type: 'image',
+                                rect: ['-71px', '-70px', '250px', '250px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/Full%20screen.png', '0px', '0px']
                             }]
                         }
@@ -1426,11 +1448,11 @@
                             fill: ['rgba(79,45,110,1.00)']
                         },
                         {
-                            font: ['Arial, Helvetica, sans-serif', [145, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap'],
+                            rect: ['522px', '369px', 'auto', 'auto', 'auto', 'auto'],
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\">​Aqui va el r1</p>',
-                            type: 'text',
-                            rect: ['522px', '369px', 'auto', 'auto', 'auto', 'auto']
+                            font: ['Arial, Helvetica, sans-serif', [145, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap'],
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -1536,13 +1558,13 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
+                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
-                                type: 'text',
                                 align: 'center',
                                 id: 'numeros',
-                                textStyle: ['', '', '', '', 'none'],
                                 text: '<p style=\"margin: 0px;\">​1 - 2</p>',
-                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto']
+                                textStyle: ['', '', '', '', 'none'],
+                                type: 'text'
                             },
                             {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
@@ -1658,13 +1680,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 type: 'text',
-                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto'],
-                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
-                                id: 'Text',
                                 textStyle: ['', '', '24px', '', ''],
+                                id: 'Text',
+                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 align: 'center',
-                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
+                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
                     ],
@@ -1753,13 +1775,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 type: 'text',
-                                rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto'],
-                                text: '<p style=\"margin: 0px;\">​Empecemos</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '24px', '', ''],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Empecemos</p>',
                                 align: 'center',
-                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
+                                rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
                     ],
@@ -1931,13 +1953,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 type: 'text',
-                                rect: ['21px', '11px', 'auto', 'auto', 'auto', 'auto'],
-                                text: '<p style=\"margin: 0px;\">​Resultados</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '24px', '', ''],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Resultados</p>',
                                 align: 'center',
-                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
+                                rect: ['21px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
                     ],
@@ -2017,10 +2039,10 @@
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
-                                type: 'image',
-                                id: 'respuestas-02',
-                                rect: ['-6px', '-6px', '142px', '142px', 'auto', 'auto'],
                                 transform: [[], [], [], ['0.85', '0.85']],
+                                id: 'respuestas-02',
+                                type: 'image',
+                                rect: ['-6px', '-6px', '142px', '142px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/respuestas-02.png', '0px', '0px']
                             }]
                         }
@@ -2108,13 +2130,13 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
+                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
-                                type: 'text',
                                 align: 'center',
                                 id: 'numeros',
-                                textStyle: ['', '', '', '', 'none'],
                                 text: '<p style=\"margin: 0px;\">3 - 4</p>',
-                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto']
+                                textStyle: ['', '', '', '', 'none'],
+                                type: 'text'
                             },
                             {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
@@ -2230,13 +2252,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
-                                type: 'text',
-                                textStyle: ['', '', '24px', '', ''],
-                                id: 'Text',
                                 text: '<p style=\"margin: 0px;\">​Preguntas</p>',
+                                id: 'Text',
+                                textStyle: ['', '', '24px', '', ''],
                                 align: 'center',
-                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
+                                type: 'text'
                             }]
                         }
                     ],
@@ -2325,13 +2347,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
-                                type: 'text',
-                                textStyle: ['', '', '24px', '', ''],
-                                id: 'Text',
                                 text: '<p style=\"margin: 0px;\">​Preguntas</p>',
+                                id: 'Text',
+                                textStyle: ['', '', '24px', '', ''],
                                 align: 'center',
-                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
+                                type: 'text'
                             }]
                         }
                     ],
@@ -2420,13 +2442,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
-                                type: 'text',
-                                textStyle: ['', '', '24px', '', ''],
-                                id: 'Text',
                                 text: '<p style=\"margin: 0px;\">​Preguntas</p>',
+                                id: 'Text',
+                                textStyle: ['', '', '24px', '', ''],
                                 align: 'center',
-                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
+                                type: 'text'
                             }]
                         }
                     ],
@@ -2515,13 +2537,13 @@
                                 fill: ['rgba(79,45,110,1)']
                             },
                             {
+                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 type: 'text',
-                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto'],
-                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
-                                id: 'Text',
                                 textStyle: ['', '', '24px', '', ''],
+                                id: 'Text',
+                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 align: 'center',
-                                font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
+                                rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
                     ],
@@ -2608,13 +2630,13 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
+                                type: 'text',
                                 rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">5 - 6</p>',
                                 textStyle: ['', '', '', '', 'none'],
-                                type: 'text'
+                                text: '<p style=\"margin: 0px;\">5 - 6</p>',
+                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap']
                             },
                             {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
@@ -2728,13 +2750,13 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
+                                type: 'text',
                                 rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">7 - 8</p>',
                                 textStyle: ['', '', '', '', 'none'],
-                                type: 'text'
+                                text: '<p style=\"margin: 0px;\">7 - 8</p>',
+                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap']
                             },
                             {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
@@ -2848,13 +2870,13 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
+                                type: 'text',
                                 rect: ['27px', '40px', 'auto', 'auto', 'auto', 'auto'],
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">9 - 10</p>',
                                 textStyle: ['', '', '', '', 'none'],
-                                type: 'text'
+                                text: '<p style=\"margin: 0px;\">9 - 10</p>',
+                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap']
                             },
                             {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],

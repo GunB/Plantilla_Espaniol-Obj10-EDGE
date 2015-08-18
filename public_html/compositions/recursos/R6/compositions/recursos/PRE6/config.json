@@ -1,0 +1,23 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Escuche el audio y seleccione la opción correcta de la clasificación. Recuerde la convención consonante (c) y vocal (v).",
+    "picks": {
+        "1": {
+            "descripcion": "cvccvcv",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "cvcccvccv",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "cvcvvcvcv",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "cvvccvccv",
+            "esRespuesta": false
+        }      
+        
+    }
+}
