@@ -970,4 +970,36 @@
     })("btnr_6");
    //Edge symbol end:'btnr_6'
 
+   //=========================================================
+   
+   //Edge symbol: 'home'
+   (function(symbolName) {   
+   
+   })("home");
+   //Edge symbol end:'home'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_adelante'
+   (function(symbolName) {   
+   
+   })("btn_adelante");
+   //Edge symbol end:'btn_adelante'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_atras'
+   (function(symbolName) {   
+   
+   })("btn_atras");
+   //Edge symbol end:'btn_atras'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_enviar'
+   (function(symbolName) {   
+   
+   })("btn_enviar");
+   //Edge symbol end:'btn_enviar'
+
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-9139205");

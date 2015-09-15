@@ -18,7 +18,7 @@ EDGE_Plantilla = {
     portada_on_show: null,
     scorm_available: true,
     basic_contenedor_name: {
-        "contenedor": ["contenedor_home"],
+        "contenedor": ["contenedor_home", "home"],
         "base_contenedor": ["back_contenedor_home"]
     },
     title: ["titulo"],
@@ -477,23 +477,23 @@ $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R3.button:
-            mostrar_pagina("3");
-            play_buttons(evt);
-            break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R4.button:
             mostrar_pagina("4");
             play_buttons(evt);
             break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
-            mostrar_pagina("5");
-            play_buttons(evt);
-            break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
+        case "Stage_" + EDGE_Plantilla.button_nav.R4.button:
             mostrar_pagina("6");
             play_buttons(evt);
             break;
+        case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
+            mostrar_pagina("8");
+            play_buttons(evt);
+            break;
+        case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
+            mostrar_pagina("10");
+            play_buttons(evt);
+            break;
         case "Stage_" + EDGE_Plantilla.button_nav.R7.button:
-            mostrar_pagina("7");
+            mostrar_pagina("resultado");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.learning.button:

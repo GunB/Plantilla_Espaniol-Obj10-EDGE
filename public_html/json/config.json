@@ -17,18 +17,22 @@
             "has_jquery": true
         },
         "2": {
-            "type": "recurso",
+            "type": "actividad",
             "recurso": "2",
-            "url": "recursos/R2/esn1le01ob01r2.html",
-            "titulo": "Exploremos",
+            "actividad": "pick_many",
+            "url": "recursos/PRE1/lec1_obj10-01.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
             "subtitulo": "Las letras",
             "has_jquery": true
         },
         "3": {
             "type": "actividad",
             "recurso": "3",
-            "actividad": "drag_drop",
-            "url": "recursos/R3/esn1le01ob01r3.html",
+            "actividad": "pick_many",
+            "url": "recursos/PRE2/lec1_obj10-02.html",
             "interaction": {
                 "ALL": true
             },
@@ -39,8 +43,8 @@
         "4": {
             "type": "actividad",
             "recurso": "4",
-            "actividad": "drag_drop",
-            "url": "recursos/R4/le1obj1r4.html",
+            "actividad": "pick_many",
+            "url": "recursos/PRE3/lec1_obj10-03.html",
             "interaction": {
                 "ALL": true
             },
@@ -51,8 +55,8 @@
         "5": {
             "type": "actividad",
             "recurso": "5",
-            "actividad": "R5_QQSM",
-            "url": "recursos/R5/R5.html",
+            "actividad": "pick_many",
+            "url": "recursos/PRE4/lec1_obj10-04.html",
             "interaction": {
                 "ALL": true
             },
@@ -63,21 +67,72 @@
         "6": {
             "type": "actividad",
             "recurso": "6",
-            "actividad": "R6",
-            "url": "recursos/R6/R6.html",
+            "actividad": "pick_many",
+            "url": "recursos/PRE5/lec1_obj10-05.html",
             "interaction": {
-                "ALL": false
+                "ALL": true
             },
-            "titulo": "Evaluemos",
+            "titulo": "Practiquemos",
             "subtitulo": "Las letras",
             "has_jquery": true
         },
         "7": {
-            "type": "recurso",
-            "recurso": "7",
-            "url": "recursos/R7/esn1le01ob01r7.html",
-            "pdf":"../../../media/pdf/esn1le01ob01guion.pdf",
-            "titulo": "Aprendamos en papel",
+            "type": "actividad",
+            "recurso": "2",
+            "actividad": "pick_many",
+            "url": "recursos/PRE6/lec1_obj10-06.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "has_jquery": true
+        },
+        "8": {
+            "type": "actividad",
+            "recurso": "8",
+            "actividad": "pick_many",
+            "url": "recursos/PRE7/lec1_obj10-07.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "has_jquery": true
+        },
+        "9": {
+            "type": "actividad",
+            "recurso": "9",
+            "actividad": "pick_many",
+            "url": "recursos/PRE8/lec1_obj10-08.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "has_jquery": true
+        },
+        "10": {
+            "type": "actividad",
+            "recurso": "10",
+            "actividad": "pick_many",
+            "url": "recursos/PRE9/lec1_obj10-09.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "has_jquery": true
+        },
+        "11": {
+            "type": "actividad",
+            "recurso": "11",
+            "actividad": "pick_many",
+            "url": "recursos/PRE10/lec1_obj10-10.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
             "subtitulo": "Las letras",
             "has_jquery": true
         },
