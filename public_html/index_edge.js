@@ -8,7 +8,9 @@
         vid='media/',
         js='js/',
         fonts = {
-            'source-sans-pro, sans-serif': '<script src=\"http://use.edgefonts.net/source-sans-pro:n4,n9,n7,i7,i4,n3,i3,n6,i6,i9,n2,i2:all.js\"></script>'        },
+            'source-sans-pro, sans-serif': '<script src=\"http://use.edgefonts.net/source-sans-pro:n4,n9,n7,i7,i4,n3,i3,n6,i6,i9,n2,i2:all.js\"></script>',
+            'sena_icon': '<link rel=\"stylesheet\" href=\"css/stylesheet.css\" type=\"text/css\" media=\"screen\" title=\"\" charset=\"utf-8\" />',
+            'source-code-pro, sans-serif': '<script src=\"http://use.edgefonts.net/source-code-pro:n9,n7,n2,n3,n4,n6,n5:all.js\"></script>'        },
         opts = {
             'gAudioPreloadPreference': 'auto',
             'gVideoPreloadPreference': 'auto'
@@ -58,21 +60,28 @@
                             transform: [[],[],[],['0.99565','0.99363']]
                         },
                         {
+                            id: 'BTN-tools-Gris-48',
+                            type: 'image',
+                            tag: 'img',
+                            rect: ['1794px', '20px', '109px', '101px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"BTN-tools-Gris-48.png",'0px','0px']
+                        },
+                        {
+                            id: 'nivel',
+                            symbolName: 'nivel',
+                            type: 'rect',
+                            rect: ['21', '96', '1881', '42', 'auto', 'auto']
+                        },
+                        {
                             id: 'banner',
                             type: 'image',
                             rect: ['20px', '20px', '1882px', '114px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"banner.png",'0px','0px']
                         },
                         {
-                            id: 'nivel',
-                            type: 'image',
-                            rect: ['21px', '55px', '1880px', '80px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"nivel.png",'0px','0px']
-                        },
-                        {
                             id: 'contenedor_portada',
                             symbolName: 'overlay_portada',
-                            display: 'block',
+                            display: 'none',
                             type: 'rect',
                             rect: ['0', '136', '1920', '944', 'auto', 'auto']
                         },
@@ -80,7 +89,8 @@
                             id: 'btn_menugrafico',
                             symbolName: 'btn_menugrafico',
                             type: 'rect',
-                            rect: ['1794', '20', '107', '101', 'auto', 'auto']
+                            rect: ['1794', '20', '107', '101', 'auto', 'auto'],
+                            cursor: 'pointer'
                         },
                         {
                             id: 'menu_grafico',
@@ -236,7 +246,7 @@
                             id: 'btnr_5',
                             symbolName: 'btnr_5',
                             type: 'rect',
-                            rect: ['1027px', '931px', 'undefined', 'undefined', 'auto', 'auto'],
+                            rect: ['1025px', '933px', 'undefined', 'undefined', 'auto', 'auto'],
                             cursor: 'pointer'
                         },
                         {
@@ -250,8 +260,7 @@
                             id: 'btnr_7',
                             symbolName: 'btnr_7',
                             type: 'rect',
-                            rect: ['1661px', '945px', 'undefined', 'undefined', 'auto', 'auto'],
-                            cursor: 'pointer'
+                            rect: ['1661px', '945px', 'undefined', 'undefined', 'auto', 'auto']
                         },
                         {
                             id: 'tool_empecemos',
@@ -294,13 +303,6 @@
                             symbolName: 'tool_resultados',
                             type: 'rect',
                             rect: ['1640px', '874px', 'undefined', 'undefined', 'auto', 'auto']
-                        },
-                        {
-                            id: 'container_overlay',
-                            symbolName: 'container_overlay',
-                            display: 'none',
-                            type: 'rect',
-                            rect: ['0', '0', '1920', '1080', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -317,12 +319,12 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid43",
+                            "eid3",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${container_overlay}",
+                            "${overlay}",
                             'none',
                             'none'
                         ],
@@ -333,16 +335,6 @@
                             0,
                             "linear",
                             "${contenedor_portada}",
-                            'block',
-                            'block'
-                        ],
-                        [
-                            "eid3",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${overlay}",
                             'none',
                             'none'
                         ]
@@ -359,10 +351,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1920px', '1080px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '1920px', '1080px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0.4706)']
                         },
                         {
@@ -421,13 +413,13 @@
                 content: {
                     dom: [
                         {
+                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(255,255,255,1.00)', '700', 'none', 'normal', 'break-word', 'normal'],
                             type: 'text',
-                            rect: ['0px', '0px', '649px', '50px', 'auto', 'auto'],
-                            textStyle: ['', '', '', '', 'none'],
+                            align: 'left',
                             id: 'Titulo',
                             text: '<p style=\"margin: 0px; font-family: source-sans-pro, sans-serif; font-weight: 600; font-style: normal; text-decoration: none; font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-align: left; text-indent: 0px; line-height: normal;\">Evaluación</p>',
-                            align: 'left',
-                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(255,255,255,1.00)', '700', 'none', 'normal', 'break-word', 'normal']
+                            textStyle: ['', '', '', '', 'none'],
+                            rect: ['0px', '0px', '649px', '50px', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -454,15 +446,17 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'logo_sena',
                             rect: ['0px', '0px', '239px', '173px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/logo_sena.png', '0px', '0px']
+                            id: 'logo_sena',
+                            fill: ['rgba(0,0,0,0)', 'images/logo_sena.png', '0px', '0px'],
+                            type: 'image',
+                            tag: 'img'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '239px', '173px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '239px', '173px']
                         }
                     }
                 },
@@ -484,13 +478,13 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '632px', '41px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,182,0,1.00)', '500', 'none', 'normal', 'break-word', 'normal'],
-                            type: 'text',
-                            text: '<p style=\"margin: 0px;\">​Español &gt; Pre A1 Introductorio &gt; Mi contexto</p>',
+                            align: 'right',
                             id: 'Ruta',
                             textStyle: ['', '', '', '', 'none'],
-                            align: 'right',
-                            rect: ['0px', '0px', '632px', '41px', 'auto', 'auto']
+                            text: '<p style=\"margin: 0px;\">​Español &gt; Pre A1 Introductorio &gt; Mi contexto</p>',
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -518,15 +512,18 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '108px', '80px', 'auto', 'auto'],
-                            id: 'RectangleCopy',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(255,0,0,0.00)']
+                            textStyle: ['', '', '87px', '', 'none'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
+                            id: 'Text6',
+                            text: '<p style=\"margin: 0px;\">​R</p>',
+                            align: 'center',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '108px', '80px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '108px', '80px']
                         }
                     }
                 },
@@ -549,15 +546,18 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '108px', '80px', 'auto', 'auto'],
-                            id: 'RectangleCopy',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(255,0,0,0.00)']
+                            textStyle: ['', '', '87px', '', 'none'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
+                            id: 'Text5',
+                            text: '<p style=\"margin: 0px;\">​U</p>',
+                            align: 'center',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '108px', '80px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '108px', '80px']
                         }
                     }
                 },
@@ -584,11 +584,21 @@
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,0,0,0.00)']
+                        },
+                        {
+                            rect: ['0px', '0', '108px', '80px', 'auto', 'auto'],
+                            textStyle: ['', '', '87px', '', 'none'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
+                            id: 'Text2',
+                            text: '<p style=\"margin: 0px;\">​Q</p>',
+                            align: 'center',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '108px', '80px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '108px', '80px']
                         }
                     }
                 },
@@ -615,11 +625,21 @@
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,0,0,0.00)']
+                        },
+                        {
+                            rect: ['0px', '0px', '108px', '80px', 'auto', 'auto'],
+                            textStyle: ['', '', '87px', '', 'none'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
+                            id: 'Text3',
+                            text: '<p style=\"margin: 0px;\">​T</p>',
+                            align: 'center',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '108px', '80px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '108px', '80px']
                         }
                     }
                 },
@@ -646,11 +666,21 @@
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,0,0,0.00)']
+                        },
+                        {
+                            rect: ['0px', '0px', '108px', '80px', 'auto', 'auto'],
+                            textStyle: ['', '', '87px', '', ''],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', 'normal', 'none', '', 'break-word', ''],
+                            id: 'Text',
+                            text: '<p style=\"margin: 0px;\">​P</p>',
+                            align: 'center',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '108px', '80px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '108px', '80px']
                         }
                     }
                 },
@@ -672,24 +702,71 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '108px', '80px', 'auto', 'auto'],
-                            id: 'RectangleCopy',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(255,0,0,0.00)']
+                            textStyle: ['', '', '87px', '', 'none'],
+                            rect: ['-1px', '0px', '108px', '80px', 'auto', 'auto'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
+                            align: 'center',
+                            id: 'AT_CONTRA_on',
+                            text: '<p style=\"margin: 0px;\">​S</p>',
+                            display: 'block',
+                            type: 'text'
+                        },
+                        {
+                            textStyle: ['', '', '87px', '', 'none'],
+                            rect: ['-1px', '0px', '108px', '80px', 'auto', 'auto'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
+                            align: 'center',
+                            id: 'AT_CONTRA_off',
+                            text: '<p style=\"margin: 0px;\">​6</p>',
+                            display: 'none',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '108px', '80px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '108px', '80px']
                         }
                     }
                 },
                 timeline: {
-                    duration: 0,
+                    duration: 250,
                     autoPlay: true,
+                    labels: {
+                        "on": 0,
+                        "off": 250
+                    },
                     data: [
-
+                        [
+                            "eid43",
+                            "display",
+                            250,
+                            0,
+                            "linear",
+                            "${AT_CONTRA_on}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid44",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${AT_CONTRA_off}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid45",
+                            "display",
+                            250,
+                            0,
+                            "linear",
+                            "${AT_CONTRA_off}",
+                            'none',
+                            'block'
+                        ]
                     ]
                 }
             },
@@ -1340,60 +1417,18 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
-                            id: 'RoundRect',
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             rect: ['0px', '0px', '107px', '580px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            fill: ['rgba(0,0,0,0.47)'],
-                            c: [
-                            {
-                                rect: ['8px', '486px', '91px', '91px', 'auto', 'auto'],
-                                id: 'accesi',
-                                transform: [[], [], [], ['0.9', '0.9']],
-                                type: 'image',
-                                fill: ['rgba(0,0,0,0)', 'images/accesi.png', '0px', '0px']
-                            },
-                            {
-                                rect: ['8px', '295px', '91px', '91px', 'auto', 'auto'],
-                                id: 'audio',
-                                transform: [[], [], [], ['0.9', '0.9']],
-                                type: 'image',
-                                fill: ['rgba(0,0,0,0)', 'images/audio.png', '0px', '0px']
-                            },
-                            {
-                                rect: ['8px', '199px', '91px', '91px', 'auto', 'auto'],
-                                id: 'ayuda_2',
-                                transform: [[], [], [], ['0.9', '0.9']],
-                                type: 'image',
-                                fill: ['rgba(0,0,0,0)', 'images/ayuda%20%282%29.png', '0px', '0px']
-                            },
-                            {
-                                rect: ['8px', '390px', '91px', '91px', 'auto', 'auto'],
-                                id: 'info',
-                                transform: [[], [], [], ['0.9', '0.9']],
-                                type: 'image',
-                                fill: ['rgba(0,0,0,0)', 'images/info.png', '0px', '0px']
-                            },
-                            {
-                                rect: ['8px', '106px', '91px', '91px', 'auto', 'auto'],
-                                id: 'creditos',
-                                transform: [[], [], [], ['0.9', '0.9']],
-                                type: 'image',
-                                fill: ['rgba(0,0,0,0)', 'images/creditos.png', '0px', '0px']
-                            },
-                            {
-                                rect: ['-71px', '-70px', '250px', '250px', 'auto', 'auto'],
-                                id: 'Full_screen',
-                                transform: [[], [], [], ['0.25', '0.25']],
-                                type: 'image',
-                                fill: ['rgba(0,0,0,0)', 'images/Full%20screen.png', '0px', '0px']
-                            }]
+                            id: 'RoundRect',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(0,0,0,0.47)']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '107px', '580px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '107px', '580px']
                         }
                     }
                 },
@@ -1415,11 +1450,21 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '107px', '101px', 'auto', 'auto'],
-                            id: 'BTN-tools-ES',
                             type: 'image',
+                            id: 'BTN-tools-ES',
+                            rect: ['0px', '0px', '109px', '101px', 'auto', 'auto'],
                             cursor: 'pointer',
-                            fill: ['rgba(0,0,0,0)', 'images/BTN-tools-ES.png', '0px', '0px']
+                            fill: ['rgba(0,0,0,0)', 'images/BTN-tools-ES2.png', '0px', '0px']
+                        },
+                        {
+                            type: 'text',
+                            align: 'center',
+                            textStyle: ['', '', '107px', '', ''],
+                            rect: ['0px', '0px', '107px', '101px', 'auto', 'auto'],
+                            font: ['sena_icon', [68, 'px'], 'rgba(255,182,0,1.00)', 'normal', 'none', '', 'break-word', ''],
+                            id: 'Text',
+                            textShadow: ['rgba(0,0,0,0.65098)', 2, 1, 2],
+                            text: '<p style=\"margin: 0px;\">​W</p>'
                         }
                     ],
                     style: {
@@ -1446,18 +1491,18 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1920px', '944px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle',
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '1920px', '944px', 'auto', 'auto'],
                             fill: ['rgba(79,45,110,1.00)']
                         },
                         {
-                            type: 'text',
+                            font: ['Arial, Helvetica, sans-serif', [145, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap'],
                             id: 'Text',
                             text: '<p style=\"margin: 0px;\">​Aqui va el r1</p>',
-                            rect: ['522px', '369px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [145, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap']
+                            type: 'text',
+                            rect: ['522px', '369px', 'auto', 'auto', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1484,39 +1529,16 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '1838px', '785px', 'auto', 'auto'],
+                            id: 'Rectangle',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             type: 'rect',
-                            id: 'home',
-                            symbolName: 'home',
-                            cursor: 'pointer',
-                            rect: ['0', '0', '1838', '785', 'auto', 'auto']
-                        },
-                        {
-                            type: 'rect',
-                            id: 'btn_adelante',
-                            symbolName: 'btn_adelante',
-                            cursor: 'pointer',
-                            rect: ['1567px', '684', '76', '77', 'auto', 'auto']
-                        },
-                        {
-                            type: 'rect',
-                            id: 'btn_atras',
-                            symbolName: 'btn_atras',
-                            cursor: 'pointer',
-                            rect: ['1471px', '684', '76', '77', 'auto', 'auto']
-                        },
-                        {
-                            type: 'rect',
-                            id: 'btn_enviar',
-                            symbolName: 'btn_enviar',
-                            cursor: 'pointer',
-                            rect: ['1672', '723', '120', '38', 'auto', 'auto']
+                            fill: ['rgba(230,253,200,1.00)']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1838px', '785px'],
-                            overflow: 'visible'
+                            rect: [null, null, '1838px', '785px']
                         }
                     }
                 },
@@ -1570,11 +1592,11 @@
                 content: {
                     dom: [
                         {
-                            type: 'ellipse',
-                            id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                            rect: ['-2px', '-1px', '120px', '120px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'borde',
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
+                            type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
@@ -1586,15 +1608,6 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
-                                type: 'text',
-                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto'],
-                                align: 'center',
-                                id: 'numeros',
-                                textStyle: ['', '', '', '', 'none'],
-                                text: '<p style=\"margin: 0px;\">​1 - 2</p>',
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap']
-                            },
-                            {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
                                 borderRadius: ['50%', '50%', '50%', '50%'],
                                 id: 'aro',
@@ -1603,18 +1616,29 @@
                                 fill: ['rgba(79,45,110,0.00)']
                             },
                             {
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 rect: ['81px', '90px', '10px', '5px', 'auto', 'auto'],
+                                transform: [[], ['45']],
                                 id: 'cola',
                                 stroke: [3, 'rgb(255, 255, 255)', 'none'],
                                 type: 'rect',
                                 fill: ['rgba(255,255,255,1.00)']
+                            },
+                            {
+                                textStyle: ['', '', '120px', '', 'none'],
+                                rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                                font: ['source-code-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', ''],
+                                align: 'center',
+                                id: 'numeros',
+                                text: '<p style=\"margin: 0px;\">​1-2</p>',
+                                type: 'text',
+                                tag: 'p'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '120px', '120px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '120px', '120px']
                         }
                     }
                 },
@@ -1880,25 +1904,35 @@
                 content: {
                     dom: [
                         {
-                            type: 'ellipse',
+                            rect: ['-14px', '-14px', '130px', '130px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
-                            id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['-13px', '-13px', '130px', '130px', 'auto', 'auto'],
                             transform: [[], [], [], ['0.8', '0.8']],
+                            id: 'borde',
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
+                            type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
-                                rect: ['5px', '5px', '120px', '120px', 'auto', 'auto'],
                                 id: 'empecemos_btn',
                                 type: 'image',
+                                rect: ['5px', '5px', '120px', '120px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/empecemos_btn2.png', '0px', '0px']
+                            },
+                            {
+                                rect: ['-1px', '1px', '131px', '130px', 'auto', 'auto'],
+                                textStyle: ['', '', '129px', '2px', 'none'],
+                                font: ['sena_icon', [97, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
+                                id: 'Text2Copy',
+                                text: '<p style=\"margin: 0px;\">​B</p>',
+                                align: 'center',
+                                type: 'text'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '104px', '104px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '104px', '104px']
                         }
                     }
                 },
@@ -2058,11 +2092,11 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.8', '0.8']],
+                            rect: ['-14px', '-14px', '130px', '130px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
+                            transform: [[], [], [], ['0.8', '0.8']],
                             id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['-13px', '-13px', '130px', '130px', 'auto', 'auto'],
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
                             type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
@@ -2072,12 +2106,22 @@
                                 transform: [[], [], [], ['0.85', '0.85']],
                                 type: 'image',
                                 fill: ['rgba(0,0,0,0)', 'images/respuestas-02.png', '0px', '0px']
+                            },
+                            {
+                                rect: ['0px', '0px', '130px', '130px', 'auto', 'auto'],
+                                textStyle: ['', '', '127px', '1px', 'none'],
+                                font: ['sena_icon', [83, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
+                                id: 'Text2Copy2',
+                                text: '<p style=\"margin: 0px;\">​K</p>',
+                                align: 'center',
+                                type: 'text'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '104px', '104px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '104px', '104px']
                         }
                     }
                 },
@@ -2108,6 +2152,16 @@
                             "${borde}",
                             '0.9',
                             '0.8'
+                        ],
+                        [
+                            "eid47",
+                            "color",
+                            0,
+                            0,
+                            "linear",
+                            "${Text2Copy2}",
+                            'rgba(255,182,0,0.00)',
+                            'rgba(255,182,0,0.00)'
                         ],
                         [
                             "eid31",
@@ -2142,11 +2196,11 @@
                 content: {
                     dom: [
                         {
-                            type: 'ellipse',
-                            id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                            rect: ['-1px', '-1px', '120px', '120px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'borde',
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
+                            type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
@@ -2158,15 +2212,6 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
-                                type: 'text',
-                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto'],
-                                align: 'center',
-                                id: 'numeros',
-                                textStyle: ['', '', '', '', 'none'],
-                                text: '<p style=\"margin: 0px;\">3 - 4</p>',
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap']
-                            },
-                            {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
                                 borderRadius: ['50%', '50%', '50%', '50%'],
                                 id: 'aro',
@@ -2175,18 +2220,28 @@
                                 fill: ['rgba(79,45,110,0.00)']
                             },
                             {
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 rect: ['81px', '90px', '10px', '5px', 'auto', 'auto'],
+                                transform: [[], ['45']],
                                 id: 'cola',
                                 stroke: [3, 'rgb(255, 255, 255)', 'none'],
                                 type: 'rect',
                                 fill: ['rgba(255,255,255,1.00)']
+                            },
+                            {
+                                rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                                textStyle: ['', '', '120px', '', 'none'],
+                                font: ['source-code-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', ''],
+                                id: 'numeros',
+                                text: '<p style=\"margin: 0px;\">3-4</p>',
+                                align: 'center',
+                                type: 'text'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '120px', '120px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '120px', '120px']
                         }
                     }
                 },
@@ -2642,11 +2697,11 @@
                 content: {
                     dom: [
                         {
-                            type: 'ellipse',
-                            id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                            rect: ['-1px', '-1px', '120px', '120px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'borde',
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
+                            type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
@@ -2658,15 +2713,6 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
-                                type: 'text',
-                                align: 'center',
-                                id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">5 - 6</p>',
-                                textStyle: ['', '', '', '', 'none'],
-                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto']
-                            },
-                            {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
                                 borderRadius: ['50%', '50%', '50%', '50%'],
                                 id: 'aro',
@@ -2675,18 +2721,28 @@
                                 fill: ['rgba(79,45,110,0.00)']
                             },
                             {
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 rect: ['81px', '90px', '10px', '5px', 'auto', 'auto'],
+                                transform: [[], ['45']],
                                 id: 'cola',
                                 stroke: [3, 'rgb(255, 255, 255)', 'none'],
                                 type: 'rect',
                                 fill: ['rgba(255,255,255,1.00)']
+                            },
+                            {
+                                rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                                textStyle: ['', '', '120px', '', 'none'],
+                                font: ['source-code-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', ''],
+                                id: 'numeros',
+                                text: '<p style=\"margin: 0px;\">5-6</p>',
+                                align: 'center',
+                                type: 'text'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '120px', '120px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '120px', '120px']
                         }
                     }
                 },
@@ -2762,11 +2818,11 @@
                 content: {
                     dom: [
                         {
-                            type: 'ellipse',
-                            id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                            rect: ['-1px', '-1px', '120px', '120px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'borde',
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
+                            type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
@@ -2778,15 +2834,6 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
-                                type: 'text',
-                                align: 'center',
-                                id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">7 - 8</p>',
-                                textStyle: ['', '', '', '', 'none'],
-                                rect: ['34px', '39px', 'auto', 'auto', 'auto', 'auto']
-                            },
-                            {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
                                 borderRadius: ['50%', '50%', '50%', '50%'],
                                 id: 'aro',
@@ -2795,18 +2842,28 @@
                                 fill: ['rgba(79,45,110,0.00)']
                             },
                             {
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 rect: ['81px', '90px', '10px', '5px', 'auto', 'auto'],
+                                transform: [[], ['45']],
                                 id: 'cola',
                                 stroke: [3, 'rgb(255, 255, 255)', 'none'],
                                 type: 'rect',
                                 fill: ['rgba(255,255,255,1.00)']
+                            },
+                            {
+                                rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                                textStyle: ['', '', '120px', '', 'none'],
+                                font: ['source-code-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', ''],
+                                id: 'numeros',
+                                text: '<p style=\"margin: 0px;\">7-8</p>',
+                                align: 'center',
+                                type: 'text'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '120px', '120px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '120px', '120px']
                         }
                     }
                 },
@@ -2882,11 +2939,11 @@
                 content: {
                     dom: [
                         {
-                            type: 'ellipse',
-                            id: 'borde',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                            rect: ['-1px', '-1px', '120px', '120px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
+                            id: 'borde',
+                            stroke: [1, 'rgba(204,204,204,1.00)', 'solid'],
+                            type: 'ellipse',
                             fill: ['rgba(204,204,204,1.00)'],
                             c: [
                             {
@@ -2898,15 +2955,6 @@
                                 fill: ['rgba(232,90,64,1.00)', [50, 23, 'true', 'farthest-corner', [['rgba(79,45,110,1.00)', 26], ['rgba(48,27,67,1.00)', 73]]]]
                             },
                             {
-                                font: ['source-sans-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', 'nowrap'],
-                                type: 'text',
-                                align: 'center',
-                                id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">9 - 10</p>',
-                                textStyle: ['', '', '', '', 'none'],
-                                rect: ['27px', '40px', 'auto', 'auto', 'auto', 'auto']
-                            },
-                            {
                                 rect: ['17px', '16px', '79px', '79px', 'auto', 'auto'],
                                 borderRadius: ['50%', '50%', '50%', '50%'],
                                 id: 'aro',
@@ -2915,18 +2963,28 @@
                                 fill: ['rgba(79,45,110,0.00)']
                             },
                             {
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 rect: ['81px', '90px', '10px', '5px', 'auto', 'auto'],
+                                transform: [[], ['45']],
                                 id: 'cola',
                                 stroke: [3, 'rgb(255, 255, 255)', 'none'],
                                 type: 'rect',
                                 fill: ['rgba(255,255,255,1.00)']
+                            },
+                            {
+                                rect: ['0px', '0px', '120px', '120px', 'auto', 'auto'],
+                                textStyle: ['', '', '120px', '', 'none'],
+                                font: ['source-code-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', ''],
+                                id: 'numeros',
+                                text: '<p style=\"margin: 0px;\">9-10</p>',
+                                align: 'center',
+                                type: 'text'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '120px', '120px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '120px', '120px']
                         }
                     }
                 },
@@ -2992,7 +3050,7 @@
                     ]
                 }
             },
-            "home": {
+            "nivel": {
                 version: "6.0.0",
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
@@ -3002,111 +3060,26 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '24px', '1881px', '18px', 'auto', 'auto'],
+                            borderRadius: ['0px', '0px', '18px', '18px 18px'],
+                            overflow: 'hidden',
+                            id: 'nivel',
+                            stroke: [1, 'rgb(204, 204, 204)', 'none'],
                             type: 'rect',
-                            id: 'Rectangle',
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            rect: ['0px', '0px', '1838px', '785px', 'auto', 'auto'],
-                            fill: ['rgba(230,253,200,1.00)']
+                            fill: ['rgba(0,165,61,0.00)'],
+                            c: [
+                            {
+                                type: 'rect',
+                                id: 'Rectangle',
+                                stroke: [73, 'rgba(0,165,61,1.00)', 'solid'],
+                                rect: ['-15px', '-8px', '1758px', '64px', 'auto', 'auto'],
+                                fill: ['rgba(0,165,61,0.00)']
+                            }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1838px', '785px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-
-                    ]
-                }
-            },
-            "btn_adelante": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            type: 'rect',
-                            id: 'Rectangle',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '76px', '77px', 'auto', 'auto'],
-                            fill: ['rgba(144,255,0,1.00)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '76px', '77px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-
-                    ]
-                }
-            },
-            "btn_atras": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            type: 'rect',
-                            id: 'RectangleCopy',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '76px', '77px', 'auto', 'auto'],
-                            fill: ['rgba(144,255,0,1.00)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '76px', '77px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-
-                    ]
-                }
-            },
-            "btn_enviar": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: ['0px', '0px', '120px', '38px', 'auto', 'auto'],
-                            borderRadius: ['10px', '10px', '10px', '10px'],
-                            id: 'RoundRect',
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,1)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '120px', '38px']
+                            rect: [null, null, '1881px', '42px']
                         }
                     }
                 },
