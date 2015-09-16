@@ -18,7 +18,7 @@ EDGE_Plantilla = {
     portada_on_show: null,
     scorm_available: true,
     basic_contenedor_name: {
-        "contenedor": ["contenedor_home", "home"],
+        "contenedor": ["contenedor_home"],
         "base_contenedor": ["back_contenedor_home"]
     },
     title: ["titulo"],
@@ -35,39 +35,31 @@ EDGE_Plantilla = {
     button_nav: {
         R1: {
             "button": ["btnr_1"],
-            "image": ["rec_1"]
+            "image": ["toolr_1"]
         },
         R2: {
             "button": ["btnr_2"],
-            "image": ["rec_2"]
+            "image": ["toolr_2"]
         },
         R3: {
             "button": ["btnr_3"],
-            "image": ["rec_3"]
+            "image": ["toolr_3"]
         },
         R4: {
             "button": ["btnr_4"],
-            "image": ["rec_4"]
+            "image": ["toolr_4"]
         },
         R5: {
             "button": ["btnr_5"],
-            "image": ["rec_5"]
+            "image": ["toolr_5"]
         },
         R6: {
             "button": ["btnr_6"],
-            "image": ["rec_6"]
+            "image": ["toolr_6"]
         },
         R7: {
             "button": ["btnr_7"],
-            "image": ["rec_7"]
-        },
-        learning: {
-            "button": ["btn_PA"],
-            "image": ["punto_A"]
-        },
-        vocabulario: {
-            "button": ["btn_VC"],
-            "image": ["vocabulario"]
+            "image": ["toolr_7"]
         }
     },
     temp_scorm: {
@@ -351,7 +343,7 @@ function inicializarPlantilla(sym) {
         type: "EDGE_Container_loaded",
         sym: sym
     };
-    $("body").trigger();
+    $("body").trigger(objEvt);
 }
 
 $("body").on("EDGE_Container_loaded", function (evt) {
@@ -477,23 +469,23 @@ $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R3.button:
-            mostrar_pagina("4");
+            mostrar_pagina("3");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R4.button:
-            mostrar_pagina("6");
+            mostrar_pagina("4");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
-            mostrar_pagina("8");
+            mostrar_pagina("5");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
-            mostrar_pagina("10");
+            mostrar_pagina("6");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R7.button:
-            mostrar_pagina("resultado");
+            mostrar_pagina("7");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.learning.button:
