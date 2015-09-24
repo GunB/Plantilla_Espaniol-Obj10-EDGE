@@ -136,6 +136,14 @@
             "subtitulo": "Las letras",
             "has_jquery": true
         },
+        "respuestas": {
+            "type": "recurso",
+            "recurso": "12",
+            "url": "recursos/PRE10/lec1_obj10-10.html",
+            "titulo": "Resultados",
+            "subtitulo": "Las letras",
+            "has_jquery": true
+        },
         "vocabulario": {
             "url": "anexos/vocabulario/vocabulario.html",
             "type": "popup_mini",

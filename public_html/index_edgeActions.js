@@ -185,61 +185,6 @@
         });
         //Edge binding end
 
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-
 
         Symbol.bindElementAction(compId, symbolName, "${btn_sena}", "click", function (sym, e) {
             // introducir aquí código para clic de ratón
@@ -911,6 +856,18 @@
     //Edge symbol: 'contenedor_home'
     (function (symbolName) {
 
+      Symbol.bindElementAction(compId, symbolName, "${btn_atras}", "click", function(sym, e) {
+         // introducir aquí código para clic de ratón
+         plantilla_atras();
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${btn_adelante}", "click", function(sym, e) {
+         // introducir aquí código para clic de ratón
+         plantilla_adelante();
+      });
+      //Edge binding end
+
     })("contenedor_home");
    //Edge symbol end:'contenedor_home'
 
@@ -1433,5 +1390,37 @@
 
    })("btnr_1_1");
    //Edge symbol end:'btnr_1_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'home'
+   (function(symbolName) {   
+   
+   })("home");
+   //Edge symbol end:'home'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_enviar'
+   (function(symbolName) {   
+   
+   })("btn_enviar");
+   //Edge symbol end:'btn_enviar'
+
+   //=========================================================
+   
+   //Edge symbol: 'Atras'
+   (function(symbolName) {   
+   
+   })("Atras");
+   //Edge symbol end:'Atras'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_adelante'
+   (function(symbolName) {   
+   
+   })("btn_adelante");
+   //Edge symbol end:'btn_adelante'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-7659645");

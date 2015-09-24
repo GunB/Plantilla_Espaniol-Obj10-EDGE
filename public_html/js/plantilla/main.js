@@ -7,7 +7,7 @@
 
 //<editor-fold defaultstate="collapsed" desc="Global values">
 EDGE_Plantilla = {
-    attemps_increasment: 1,
+    attemps_increasment: 0,
     allow_popups: true,
     play_general_sound: true,
     plantilla_sym: null,
@@ -18,8 +18,9 @@ EDGE_Plantilla = {
     portada_on_show: null,
     scorm_available: true,
     basic_contenedor_name: {
-        "contenedor": ["contenedor_home"],
-        "base_contenedor": ["back_contenedor_home"]
+        "contenedor": ["contenedor_home","home"],
+        "base_contenedor": ["back_contenedor_home"],
+        "play_buttons" : ["contenedor_home"]
     },
     title: ["titulo"],
     basic_contenedor_popup: ["container_overlay"],
@@ -35,31 +36,39 @@ EDGE_Plantilla = {
     button_nav: {
         R1: {
             "button": ["btnr_1"],
-            "image": ["toolr_1"]
+            "image": ["rec_1"]
         },
         R2: {
             "button": ["btnr_2"],
-            "image": ["toolr_2"]
+            "image": ["rec_2"]
         },
         R3: {
             "button": ["btnr_3"],
-            "image": ["toolr_3"]
+            "image": ["rec_3"]
         },
         R4: {
             "button": ["btnr_4"],
-            "image": ["toolr_4"]
+            "image": ["rec_4"]
         },
         R5: {
             "button": ["btnr_5"],
-            "image": ["toolr_5"]
+            "image": ["rec_5"]
         },
         R6: {
             "button": ["btnr_6"],
-            "image": ["toolr_6"]
+            "image": ["rec_6"]
         },
         R7: {
             "button": ["btnr_7"],
-            "image": ["toolr_7"]
+            "image": ["rec_7"]
+        },
+        learning: {
+            "button": ["btn_PA"],
+            "image": ["punto_A"]
+        },
+        vocabulario: {
+            "button": ["btn_VC"],
+            "image": ["vocabulario"]
         }
     },
     temp_scorm: {
@@ -256,7 +265,8 @@ function load_pages(sym_contenedor, strPagina, pagina, objRetro) {
 
     var objEvt = {
         type: "EDGE_Self_promiseCreating",
-        identify: pagina
+        identify: pagina,
+        pagina: strPagina
     };
     $("body").trigger(merge_options(objEvt));
 
@@ -343,7 +353,7 @@ function inicializarPlantilla(sym) {
         type: "EDGE_Container_loaded",
         sym: sym
     };
-    $("body").trigger(objEvt);
+    $("body").trigger();
 }
 
 $("body").on("EDGE_Container_loaded", function (evt) {
