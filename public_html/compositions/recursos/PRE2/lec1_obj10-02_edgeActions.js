@@ -183,6 +183,35 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${lupa_3}", "click", function(sym, e) {
+         sym.$("zoom_3").show();
+         sym.$("lupa_3").hide();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${lupa_2}", "click", function(sym, e) {
+         sym.$("zoom_2").show();
+         sym.$("lupa_2").hide();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${lupa_1}", "click", function(sym, e) {
+         sym.$("zoom_1").show();
+         sym.$("lupa_1").hide();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${lupa_4}", "click", function(sym, e) {
+         // introducir aquí código para clic de ratón
+         sym.$("zoom_4").show();
+         sym.$("lupa_4").hide();
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -368,5 +397,133 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    })("audio_1");
    //Edge symbol end:'audio_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'zoom_3'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${cerrar_lupa}", "click", function(sym, e) {
+         
+         // Ocultar un elemento 
+         sym.getSymbolElement().hide();
+         
+         // Mostrar un elemento 
+         sym.getComposition().getStage().$("lupa_3").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${Zona_clic}", "click", function(sym, e) {
+         sym.getSymbolElement().hide();
+         sym.getComposition().getStage().$("lupa_3").show();
+
+      });
+      //Edge binding end
+
+   })("zoom_3");
+   //Edge symbol end:'zoom_3'
+
+   //=========================================================
+   
+   //Edge symbol: 'cerrar_lupa'
+   (function(symbolName) {   
+   
+   })("cerrar_lupa");
+   //Edge symbol end:'cerrar_lupa'
+
+   //=========================================================
+   
+   //Edge symbol: 'zoom_2'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${cerrar_lupa}", "click", function(sym, e) {
+         
+         // Ocultar un elemento 
+         sym.getSymbolElement().hide();
+         
+         // Mostrar un elemento 
+         sym.getComposition().getStage().$("lupa_2").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${Zona_clic}", "click", function(sym, e) {
+         sym.getSymbolElement().hide();
+         sym.getComposition().getStage().$("lupa_2").show();
+
+      });
+      //Edge binding end
+
+   })("zoom_2");
+   //Edge symbol end:'zoom_2'
+
+   //=========================================================
+   
+   //Edge symbol: 'zoom_1'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${cerrar_lupa}", "click", function(sym, e) {
+         
+         // Ocultar un elemento 
+         sym.getSymbolElement().hide();
+         
+         // Mostrar un elemento 
+         sym.getComposition().getStage().$("lupa_1").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${Zona_clic}", "click", function(sym, e) {
+         sym.getSymbolElement().hide();
+         sym.getComposition().getStage().$("lupa_1").show();
+
+      });
+      //Edge binding end
+
+   })("zoom_1");
+   //Edge symbol end:'zoom_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'lupa'
+   (function(symbolName) {   
+   
+   })("lupa");
+   //Edge symbol end:'lupa'
+
+   //=========================================================
+   
+   //Edge symbol: 'zoom_4'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${cerrar_lupa}", "click", function(sym, e) {
+         
+         // Ocultar un elemento 
+         sym.getSymbolElement().hide();
+         
+         // Mostrar un elemento 
+         sym.getComposition().getStage().$("lupa_4").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${Zona_clic}", "click", function(sym, e) {
+         sym.getSymbolElement().hide();
+         sym.getComposition().getStage().$("lupa_4").show();
+
+      });
+      //Edge binding end
+
+   })("zoom_4");
+   //Edge symbol end:'zoom_4'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-17298671");

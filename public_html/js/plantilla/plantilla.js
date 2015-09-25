@@ -4,9 +4,13 @@
  * and open the template in the editor.
  */
 
+/* global EDGE_Plantilla, buscar_sym, detectZoom */
+
 EDGE_Plantilla.btn_navegacion = {
-    atras: ["contenedor_home", "btn_atras"],
-    adelante: ["contenedor_home", "btn_adelante"]
+    atras: ["contenedor_home", "btn_regresar"],
+    adelante: ["contenedor_home", "btn_adelantar"],
+    paginado: ["contenedor_home", "texto_paginado"],
+    enviar: ["contenedor_home", "btn_enviar"]
 };
 
 EDGE_Plantilla.actividades_cargadas = [];
@@ -14,7 +18,7 @@ EDGE_Plantilla.actividades_cargadas = [];
 function last_actividad() {
     var last_actividad = "1";
     $.each(EDGE_Plantilla.config.paginas, function (key, val) {
-        if(val.type === "actividad"){
+        if (val.type === "actividad") {
             EDGE_Plantilla.actividades_cargadas.push(key);
         }
         if (!isNaN(parseInt(key))) {
@@ -27,7 +31,7 @@ function last_actividad() {
 }
 
 $(document).on("EDGE_Plantilla_creationComplete", function (evt) {
-    last_actividad();
+    
     //switch (evt.identify.actividad) {
 });
 
@@ -58,8 +62,10 @@ $("body").on("EDGE_Container_loaded", function () {
             EDGE_Plantilla.temp_scorm_suspendData = jQuery.parseJSON(suspendData);
         }
         var interactions = LOAD_INTERACTIONS();
-        EDGE_Plantilla.temp_scorm = merge_options(EDGE_Plantilla.temp_scorm, interactions)
+        EDGE_Plantilla.temp_scorm = merge_options(EDGE_Plantilla.temp_scorm, interactions);
     }
+    
+    last_actividad();
 
     //$(document).trigger("resize");
 
@@ -74,7 +80,7 @@ function menu_tools_hide_show(sym) {
         sym.$("btn_ayuda").hide();
         sym.$("btn_audio").hide();
         sym.$("btn_info").hide();
-        sym.$("btn_accesibilidad").hide()
+        sym.$("btn_accesibilidad").hide();
         sym.$("Tool_accesibilidad").hide();
         sym.$("Tool_info").hide();
         sym.$("Tool_full").hide();
@@ -162,30 +168,59 @@ function resize1() {
 $("body").on("EDGE_Self_promiseCreating", function (evt) {
     //console.log(evt);
     var page = evt.identify;
+    var sym = EDGE_Plantilla.plantilla_sym;
 
     if (!page.type.startsWith("popup")) {
         //console.log(page, evt.pagina, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-        buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.basic_contenedor_name.base_contenedor).play();
+        buscar_sym(sym, EDGE_Plantilla.basic_contenedor_name.base_contenedor).play();
         EDGE_Plantilla.id_pagina_actual = evt.pagina;
         page = EDGE_Plantilla.config.paginas[evt.pagina];
 
-        var atras = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.btn_navegacion.atras, true);
-        var adelante = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.btn_navegacion.adelante, true);
+        var atras = buscar_sym(sym, EDGE_Plantilla.btn_navegacion.atras, true);
+        var adelante = buscar_sym(sym, EDGE_Plantilla.btn_navegacion.adelante, true);
+        var paginado = buscar_sym(sym, EDGE_Plantilla.btn_navegacion.paginado, true);
+        var enviar = buscar_sym(sym, EDGE_Plantilla.btn_navegacion.enviar, true);
+
+        if (page.type === "actividad") {
+            var temp_data = actividad_actual();
+            paginado.find("p").text(temp_data.key + 1 + " de " + (EDGE_Plantilla.last_actividad - 1));
+            
+            $.each(EDGE_Plantilla.button_nav, function(key, val){
+                var borde = $("#Stage_" + val.button + "_borde");
+                if(page.plantilla.button === key){
+                    borde.css("background-color", "rgba(255,182,0,1.00)");
+                }else{
+                    borde.css("background-color", "rgba(204,204,204,1.00)");
+                }
+            });
+        }
 
         switch (EDGE_Plantilla.id_pagina_actual) {
             case "2":
                 atras.hide();
                 adelante.show();
+                paginado.show();
+                enviar.show();
                 break;
             case EDGE_Plantilla.last_actividad:
                 atras.show();
                 adelante.hide();
+                paginado.show();
+                enviar.show();
                 break;
             default:
                 switch (page.type) {
                     case "actividad":
                         atras.show();
                         adelante.show();
+                        paginado.show();
+                        enviar.show();
+                        break;
+                    case "recurso":
+                        atras.hide();
+                        adelante.hide();
+                        paginado.hide();
+                        enviar.hide();
                         break;
                 }
                 break;
@@ -194,23 +229,23 @@ $("body").on("EDGE_Self_promiseCreating", function (evt) {
 
 });
 
-function plantilla_atras(){
+function actividad_actual() {
     var str_Id = EDGE_Plantilla.id_pagina_actual;
-    
-    $.each(EDGE_Plantilla.actividades_cargadas, function(key, val){
-        if(val === str_Id){
-            mostrar_pagina(EDGE_Plantilla.actividades_cargadas[key - 1]);
+    var cont = {key: 0, val:0};
+    $.each(EDGE_Plantilla.actividades_cargadas, function (key, val) {
+        if (val === str_Id) {
+            //mostrar_pagina(EDGE_Plantilla.actividades_cargadas[key - 1]);
+            cont = {key: key, val: val};
+            return false;
         }
     });
+    return cont;
 }
 
-function plantilla_adelante(){
-    var str_Id = EDGE_Plantilla.id_pagina_actual;
-    
-    $.each(EDGE_Plantilla.actividades_cargadas, function(key, val){
-        if(val === str_Id){
-            mostrar_pagina(EDGE_Plantilla.actividades_cargadas[key + 1]);
-        }
-    });
+function plantilla_atras() {
+    mostrar_pagina(EDGE_Plantilla.actividades_cargadas[actividad_actual().key - 1]);
 }
 
+function plantilla_adelante() {
+    mostrar_pagina(EDGE_Plantilla.actividades_cargadas[actividad_actual().key + 1]);
+}

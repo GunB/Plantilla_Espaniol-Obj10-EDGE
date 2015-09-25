@@ -231,6 +231,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
       
 
+      Symbol.bindElementAction(compId, symbolName, "${lupa_1}", "click", function(sym, e) {
+         sym.$("zoom_1").show();
+         sym.$("lupa_1").hide();
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -379,5 +386,49 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    
    })("SIG_2");
    //Edge symbol end:'SIG_2'
+
+   //=========================================================
+   
+   //Edge symbol: 'zoom_1'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${cerrar_lupa}", "click", function(sym, e) {
+         
+         // Ocultar un elemento 
+         sym.getSymbolElement().hide();
+         
+         // Mostrar un elemento 
+         sym.getComposition().getStage().$("lupa_1").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${Zona_clic}", "click", function(sym, e) {
+         sym.getSymbolElement().hide();
+         sym.getComposition().getStage().$("lupa_1").show();
+
+      });
+      //Edge binding end
+
+   })("zoom_1");
+   //Edge symbol end:'zoom_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'cerrar_lupa'
+   (function(symbolName) {   
+   
+   })("cerrar_lupa");
+   //Edge symbol end:'cerrar_lupa'
+
+   //=========================================================
+   
+   //Edge symbol: 'lupa'
+   (function(symbolName) {   
+   
+   })("lupa");
+   //Edge symbol end:'lupa'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-17298671");

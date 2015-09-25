@@ -29,114 +29,66 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //=========================================================
    
-   //Edge symbol: 'text_1'
+   //Edge symbol: 'DRAG_4'
    (function(symbolName) {   
    
-   })("text_1");
-   //Edge symbol end:'text_1'
+   })("DRAG_4");
+   //Edge symbol end:'DRAG_4'
 
    //=========================================================
    
-   //Edge symbol: 'text_2'
+   //Edge symbol: 'DRAG_3'
    (function(symbolName) {   
    
-   })("text_2");
-   //Edge symbol end:'text_2'
+   })("DRAG_3");
+   //Edge symbol end:'DRAG_3'
 
    //=========================================================
    
-   //Edge symbol: 'text_3'
+   //Edge symbol: 'DRAG_2'
    (function(symbolName) {   
    
-   })("text_3");
-   //Edge symbol end:'text_3'
+   })("DRAG_2");
+   //Edge symbol end:'DRAG_2'
 
    //=========================================================
    
-   //Edge symbol: 'oral'
+   //Edge symbol: 'DRAG_1'
    (function(symbolName) {   
    
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-   })("oral");
-   //Edge symbol end:'oral'
+   })("DRAG_1");
+   //Edge symbol end:'DRAG_1'
 
    //=========================================================
    
-   //Edge symbol: 'auditiva'
+   //Edge symbol: 'DROP_1'
    (function(symbolName) {   
    
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-   })("auditiva");
-   //Edge symbol end:'auditiva'
+   })("DROP_1");
+   //Edge symbol end:'DROP_1'
 
    //=========================================================
    
-   //Edge symbol: 'lectora'
+   //Edge symbol: 'DROP_2'
    (function(symbolName) {   
    
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-   })("lectora");
-   //Edge symbol end:'lectora'
+   })("DROP_2");
+   //Edge symbol end:'DROP_2'
 
    //=========================================================
    
-   //Edge symbol: 'escrita'
+   //Edge symbol: 'DROP_4'
    (function(symbolName) {   
    
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-   })("escrita");
-   //Edge symbol end:'escrita'
+   })("DROP_4");
+   //Edge symbol end:'DROP_4'
 
    //=========================================================
    
-   //Edge symbol: 'text_4'
+   //Edge symbol: 'DROP_3'
    (function(symbolName) {   
    
-      })("text_4");
-   //Edge symbol end:'text_4'
+   })("DROP_3");
+   //Edge symbol end:'DROP_3'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-14164065");

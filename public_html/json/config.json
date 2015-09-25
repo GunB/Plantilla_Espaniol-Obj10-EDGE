@@ -26,7 +26,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R2"
+            }
         },
         "3": {
             "type": "actividad",
@@ -38,7 +40,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R2"
+            }
         },
         "4": {
             "type": "actividad",
@@ -50,7 +54,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R3"
+            }
         },
         "5": {
             "type": "actividad",
@@ -62,7 +68,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R3"
+            }
         },
         "6": {
             "type": "actividad",
@@ -74,7 +82,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R4"
+            }
         },
         "7": {
             "type": "actividad",
@@ -86,7 +96,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R4"
+            }
         },
         "8": {
             "type": "actividad",
@@ -98,7 +110,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R5"
+            }
         },
         "9": {
             "type": "actividad",
@@ -110,7 +124,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R5"
+            }
         },
         "10": {
             "type": "actividad",
@@ -122,7 +138,9 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R6"
+            }
         },
         "11": {
             "type": "actividad",
@@ -134,15 +152,16 @@
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
-            "has_jquery": true
+            "plantilla" : {
+                "button" : "R6"
+            }
         },
         "respuestas": {
             "type": "recurso",
             "recurso": "12",
             "url": "recursos/PRE10/lec1_obj10-10.html",
             "titulo": "Resultados",
-            "subtitulo": "Las letras",
-            "has_jquery": true
+            "subtitulo": "Las letras"
         },
         "vocabulario": {
             "url": "anexos/vocabulario/vocabulario.html",
@@ -169,57 +188,49 @@
             "url": "elementos_plantilla/correcto/correcto.html",
             "type": "popup_mini",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "incorrecto": {
             "url": "elementos_plantilla/incorrecto/incorrecto.html",
             "type": "popup_mini",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "nuevointento": {
             "url": "elementos_plantilla/nuevointento/nuevointento.html",
             "type": "popup_mini",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "tiempo": {
             "url": "elementos_plantilla/tiempo/tiempo.html",
             "type": "popup_mini",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "creditos": {
             "url": "elementos_plantilla/creditos/creditos.html",
             "type": "popup_full",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "info": {
             "url": "elementos_plantilla/Información/Informacion.html",
             "type": "popup_full",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "ayudas": {
             "url": "elementos_plantilla/ayuda/ayuda.html",
             "type": "popup_full",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         },
         "accesibilidad": {
             "url": "elementos_plantilla/Accesibilidad/Accesibilidad.html",
             "type": "popup_full",
             "symbols": {
-            },
-            "has_jquery": true
+            }
         }        
     }
 }

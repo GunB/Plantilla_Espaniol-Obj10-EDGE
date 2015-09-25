@@ -61,14 +61,6 @@ EDGE_Plantilla = {
         R7: {
             "button": ["btnr_7"],
             "image": ["rec_7"]
-        },
-        learning: {
-            "button": ["btn_PA"],
-            "image": ["punto_A"]
-        },
-        vocabulario: {
-            "button": ["btn_VC"],
-            "image": ["vocabulario"]
         }
     },
     temp_scorm: {
@@ -479,30 +471,24 @@ $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R3.button:
-            mostrar_pagina("3");
-            play_buttons(evt);
-            break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R4.button:
             mostrar_pagina("4");
             play_buttons(evt);
             break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
-            mostrar_pagina("5");
-            play_buttons(evt);
-            break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
+        case "Stage_" + EDGE_Plantilla.button_nav.R4.button:
             mostrar_pagina("6");
             play_buttons(evt);
             break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R7.button:
-            mostrar_pagina("7");
+        case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
+            mostrar_pagina("8");
             play_buttons(evt);
             break;
-        case "Stage_" + EDGE_Plantilla.button_nav.learning.button:
-            mostrar_pagina("learning");
+        case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
+            mostrar_pagina("10");
+            play_buttons(evt);
             break;
-        case "Stage_" + EDGE_Plantilla.button_nav.vocabulario.button:
-            mostrar_pagina("vocabulario");
+        case "Stage_" + EDGE_Plantilla.button_nav.R7.button:
+            mostrar_pagina("respuestas");
+            play_buttons(evt);
             break;
         default:
             break;

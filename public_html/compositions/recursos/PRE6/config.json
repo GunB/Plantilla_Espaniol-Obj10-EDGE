@@ -1,21 +1,21 @@
 {
     "num_intentos": 2,
-    "pregunta":"Escuche el audio y seleccione la opción correcta de la clasificación. Recuerde la convención consonante (c) y vocal (v).",
+    "pregunta":"Instrucción: escuche el audio y seleccione la opción de respuesta que contenga las consonantes de la palabra mencionada en el audio. Tiene distractores.",
     "picks": {
         "1": {
-            "descripcion": "cvccvcv",
+            "descripcion": "v, t, n",
             "esRespuesta": true
         },
         "2": {
-            "descripcion": "cvcccvccv",
+            "descripcion": "f, t, n",
             "esRespuesta": false
         },
         "3": {
-            "descripcion": "cvcvvcvcv",
+            "descripcion": "v, t, m",
             "esRespuesta": false
         },
         "4": {
-            "descripcion": "cvvccvccv",
+            "descripcion": "d, t, n",
             "esRespuesta": false
         }      
         

@@ -345,7 +345,7 @@
                     }
                 },
                 timeline: {
-                    duration: 516,
+                    duration: 2000,
                     autoPlay: true,
                     data: [
                         [
@@ -399,9 +399,9 @@
                             {
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Audio</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Audio</p>',
                                 align: 'center',
                                 type: 'text'
                             },
@@ -416,9 +416,9 @@
                             {
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Audio</p>',
-                                id: 'Text',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'Text',
+                                text: '<p style=\"margin: 0px;\">​Audio</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -426,9 +426,9 @@
                         {
                             rect: ['107px', '0px', '108px', '80px', 'auto', 'auto'],
                             font: ['sena_icon', [68, 'px'], 'rgba(255,0,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​​S</p>',
-                            id: 'TextCopy6',
                             textStyle: ['', '', '79px', '', 'none'],
+                            id: 'TextCopy6',
+                            text: '<p style=\"margin: 0px;\">​​S</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -584,9 +584,9 @@
                             {
                                 type: 'text',
                                 rect: ['13px', '11px', 'auto', 'auto', 'auto', 'auto'],
-                                textStyle: ['', '', '24px', '', ''],
-                                id: 'TextCopy7',
                                 text: '<p style=\"margin: 0px;\">​Evaluemos</p>',
+                                id: 'TextCopy7',
+                                textStyle: ['', '', '24px', '', ''],
                                 align: 'center',
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
                             }]
@@ -681,8 +681,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'TextCopy',
-                                text: '<p style=\"margin: 0px;\">​Exploremos</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Exploremos</p>',
                                 rect: ['18px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -776,8 +776,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'TextCopy2',
-                                text: '<p style=\"margin: 0px;\">​Practiquemos</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Practiquemos</p>',
                                 rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -871,8 +871,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'TextCopy5',
-                                text: '<p style=\"margin: 0px;\">​Practiquemos</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Practiquemos</p>',
                                 rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -966,8 +966,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'TextCopy6',
-                                text: '<p style=\"margin: 0px;\">​Practiquemos</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Practiquemos</p>',
                                 rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -1061,8 +1061,8 @@
                                 rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto'],
                                 align: 'center',
                                 id: 'Text',
-                                text: '<p style=\"margin: 0px;\">​Empecemos</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Empecemos</p>',
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
                             }]
                         }
@@ -1350,9 +1350,9 @@
                             {
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Créditos</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Créditos</p>',
                                 align: 'center',
                                 type: 'text'
                             },
@@ -1368,9 +1368,9 @@
                         {
                             rect: ['107px', '0px', '108px', '80px', 'auto', 'auto'],
                             font: ['sena_icon', [68, 'px'], 'rgba(255,0,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​​Q</p>',
-                            id: 'TextCopy7',
                             textStyle: ['', '', '78px', '', 'none'],
+                            id: 'TextCopy7',
+                            text: '<p style=\"margin: 0px;\">​​Q</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -1462,9 +1462,9 @@
                             {
                                 rect: ['9px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Ayuda</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Ayuda</p>',
                                 align: 'center',
                                 type: 'text'
                             },
@@ -1480,9 +1480,9 @@
                         {
                             rect: ['107px', '0px', '108px', '80px', 'auto', 'auto'],
                             font: ['sena_icon', [68, 'px'], 'rgba(255,0,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​T</p>',
-                            id: 'TextCopy5',
                             textStyle: ['', '', '77px', '', 'none'],
+                            id: 'TextCopy5',
+                            text: '<p style=\"margin: 0px;\">​T</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -1574,9 +1574,9 @@
                             {
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Pantalla completa</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Pantalla completa</p>',
                                 align: 'center',
                                 type: 'text'
                             },
@@ -1592,9 +1592,9 @@
                         {
                             rect: ['107px', '-1px', '108px', '81px', 'auto', 'auto'],
                             font: ['sena_icon', [68, 'px'], 'rgba(255,0,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​​P</p>',
-                            id: 'TextCopy4',
                             textStyle: ['', '', '69px', '', 'none'],
+                            id: 'TextCopy4',
+                            text: '<p style=\"margin: 0px;\">​​P</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -1694,9 +1694,9 @@
                             {
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Información</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Información</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -1704,9 +1704,9 @@
                         {
                             rect: ['107px', '-2px', '108px', '81px', 'auto', 'auto'],
                             font: ['sena_icon', [68, 'px'], 'rgba(255,0,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​​U</p>',
-                            id: 'TextCopy3',
                             textStyle: ['', '', '87px', '', 'none'],
+                            id: 'TextCopy3',
+                            text: '<p style=\"margin: 0px;\">​​U</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -1808,9 +1808,9 @@
                             {
                                 rect: ['12px', '8px', 'auto', 'auto', 'auto', 'auto'],
                                 font: ['source-sans-pro, sans-serif', [28, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                                text: '<p style=\"margin: 0px;\">​Accesibilidad</p>',
-                                id: 'TextCopy',
                                 textStyle: ['', '', '', '', 'none'],
+                                id: 'TextCopy',
+                                text: '<p style=\"margin: 0px;\">​Accesibilidad</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -1818,9 +1818,9 @@
                         {
                             rect: ['107px', '-1px', '108px', '81px', 'auto', 'auto'],
                             font: ['sena_icon', [68, 'px'], 'rgba(255,0,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​​R</p>',
-                            id: 'TextCopy2',
                             textStyle: ['', '', '87px', '', 'none'],
+                            id: 'TextCopy2',
+                            text: '<p style=\"margin: 0px;\">​​R</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -2067,9 +2067,9 @@
                             {
                                 type: 'text',
                                 rect: ['14px', '9px', 'auto', 'auto', 'auto', 'auto'],
-                                textStyle: ['', '', '24px', '', ''],
-                                id: 'Text',
                                 text: '<p style=\"margin: 0px;\">​Punto de</p><p style=\"margin: 0px;\">​aprendizaje</p>',
+                                id: 'Text',
+                                textStyle: ['', '', '24px', '', ''],
                                 align: 'center',
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
                             }]
@@ -2162,9 +2162,9 @@
                             {
                                 type: 'text',
                                 rect: ['12px', '9px', 'auto', 'auto', 'auto', 'auto'],
-                                textStyle: ['', '', '24px', '', ''],
-                                id: 'TextCopy',
                                 text: '<p style=\"margin: 0px;\">Vocabulario</p>',
+                                id: 'TextCopy',
+                                textStyle: ['', '', '24px', '', ''],
                                 align: 'center',
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap']
                             }]
@@ -2387,41 +2387,71 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0', '1838', '785', 'auto', 'auto'],
                             id: 'home',
                             symbolName: 'home',
+                            rect: ['0px', '0', '1838', '785', 'auto', 'auto'],
                             type: 'rect'
                         },
                         {
-                            rect: ['0', '0', '0', '0', 'auto', 'auto'],
-                            id: 'btn_atras',
-                            symbolName: 'Atras',
-                            type: 'rect'
+                            type: 'rect',
+                            id: 'texto_paginado',
+                            symbolName: 'texto_paginado',
+                            cursor: 'default',
+                            rect: ['1625', '703', '115', '46', 'auto', 'auto']
                         },
                         {
-                            rect: ['0', '0', '0', '0', 'auto', 'auto'],
-                            id: 'btn_adelante',
-                            symbolName: 'btn_adelante',
-                            type: 'rect'
-                        },
-                        {
-                            rect: ['1656', '691', '158', '28', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'btn_enviar',
                             symbolName: 'btn_enviar',
-                            type: 'rect'
+                            cursor: 'pointer',
+                            rect: ['1345px', '714px', '158', '28', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'btn_regresar',
+                            symbolName: 'btn_regresar',
+                            cursor: 'pointer',
+                            rect: ['1566', '691', '70', '70', 'auto', 'auto']
+                        },
+                        {
+                            type: 'rect',
+                            id: 'btn_adelantar',
+                            symbolName: 'btn_adelantar',
+                            cursor: 'pointer',
+                            rect: ['1729', '691', '70', '70', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1838px', '785px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1838px', '785px']
                         }
                     }
                 },
                 timeline: {
-                    duration: 516,
+                    duration: 2000,
                     autoPlay: true,
                     data: [
-
+                        [
+                            "eid19",
+                            "left",
+                            0,
+                            0,
+                            "linear",
+                            "${btn_enviar}",
+                            '1345px',
+                            '1345px'
+                        ],
+                        [
+                            "eid52",
+                            "top",
+                            0,
+                            0,
+                            "linear",
+                            "${btn_enviar}",
+                            '714px',
+                            '714px'
+                        ]
                     ]
                 }
             },
@@ -2512,9 +2542,9 @@
                             {
                                 rect: ['0px', '0px', '106px', '579px', 'auto', 'auto'],
                                 font: ['sena_icon', [68, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​P</p><p style=\"margin: 0px;\">​Q</p><p style=\"margin: 0px;\">​T</p><p style=\"margin: 0px;\">​S</p><p style=\"margin: 0px;\">​U</p><p style=\"margin: 0px;\">​R</p>',
-                                id: 'Text',
                                 textStyle: ['', '', '97px', '', 'none'],
+                                id: 'Text',
+                                text: '<p style=\"margin: 0px;\">​P</p><p style=\"margin: 0px;\">​Q</p><p style=\"margin: 0px;\">​T</p><p style=\"margin: 0px;\">​S</p><p style=\"margin: 0px;\">​U</p><p style=\"margin: 0px;\">​R</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -2626,8 +2656,8 @@
                             type: 'text',
                             align: 'left',
                             id: 'Titulo',
-                            textStyle: ['', '', '', '', 'none'],
                             text: '<p style=\"margin: 0px; font-family: source-sans-pro, sans-serif; font-weight: 600; font-style: normal; text-decoration: none; font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-align: left; text-indent: 0px; line-height: normal;\">&nbsp;<span style=\"font-size: 41px;\">Empecemos</span><span style=\"font-family: source-sans-pro, sans-serif; font-weight: bold; font-style: normal; text-decoration: none; font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px;\">&nbsp;&nbsp;</span><span style=\"font-family: source-sans-pro, sans-serif; font-weight: 500; font-style: normal; text-decoration: none; font-size: 35px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px;\">las letras</span></p>',
+                            textStyle: ['', '', '', '', 'none'],
                             rect: ['0px', '0px', '649px', '50px', 'auto', 'auto']
                         }
                     ],
@@ -2672,9 +2702,9 @@
                         {
                             rect: ['0px', '0px', '90px', '90px', 'auto', 'auto'],
                             font: ['sena_icon', [65, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​I</p>',
-                            id: 'Text9',
                             textStyle: ['', '', '89px', '', 'none'],
+                            id: 'Text9',
+                            text: '<p style=\"margin: 0px;\">​I</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -2721,9 +2751,9 @@
                         {
                             rect: ['0px', '0px', '90px', '94px', 'auto', 'auto'],
                             font: ['sena_icon', [79, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                            text: '<p style=\"margin: 0px;\">​J</p>',
-                            id: 'Text10',
                             textStyle: ['', '', '93px', '', 'none'],
+                            id: 'Text10',
+                            text: '<p style=\"margin: 0px;\">​J</p>',
                             align: 'center',
                             type: 'text'
                         }
@@ -2768,9 +2798,9 @@
                             {
                                 rect: ['-1px', '-1px', '130px', '130px', 'auto', 'auto'],
                                 font: ['sena_icon', [100, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​H</p>',
-                                id: 'Text7',
                                 textStyle: ['', '', '131px', '', 'none'],
+                                id: 'Text7',
+                                text: '<p style=\"margin: 0px;\">​H</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -2869,9 +2899,9 @@
                             {
                                 rect: ['-1px', '-1px', '129px', '137px', 'auto', 'auto'],
                                 font: ['sena_icon', [90, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​F</p>',
-                                id: 'Text6',
                                 textStyle: ['', '', '137px', '', 'none'],
+                                id: 'Text6',
+                                text: '<p style=\"margin: 0px;\">​F</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -2970,9 +3000,9 @@
                             {
                                 rect: ['-1px', '-1px', '111px', '113px', 'auto', 'auto'],
                                 font: ['sena_icon', [75, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​E</p>',
-                                id: 'Text5',
                                 textStyle: ['', '', '114px', '', 'none'],
+                                id: 'Text5',
+                                text: '<p style=\"margin: 0px;\">​E</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -3071,9 +3101,9 @@
                             {
                                 rect: ['-1px', '-1px', '100px', '103px', 'auto', 'auto'],
                                 font: ['sena_icon', [72, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​D</p>',
-                                id: 'Text4',
                                 textStyle: ['', '', '100px', '', 'none'],
+                                id: 'Text4',
+                                text: '<p style=\"margin: 0px;\">​D</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -3172,9 +3202,9 @@
                             {
                                 rect: ['-1px', '-1px', '110px', '112px', 'auto', 'auto'],
                                 font: ['sena_icon', [80, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​C</p>',
-                                id: 'Text3',
                                 textStyle: ['', '', '112px', '', 'none'],
+                                id: 'Text3',
+                                text: '<p style=\"margin: 0px;\">​C</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -3273,9 +3303,9 @@
                             {
                                 rect: ['-1px', '-1px', '130px', '133px', 'auto', 'auto'],
                                 font: ['sena_icon', [100, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​B</p>',
-                                id: 'Text2',
                                 textStyle: ['', '', '132px', '', 'none'],
+                                id: 'Text2',
+                                text: '<p style=\"margin: 0px;\">​B</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -3374,9 +3404,9 @@
                             {
                                 rect: ['-13px', '-13px', '110px', '110px', 'auto', 'auto'],
                                 font: ['sena_icon', [60, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
-                                text: '<p style=\"margin: 0px;\">​G</p>',
-                                id: 'Text8',
                                 textStyle: ['', '', '110px', '', 'none'],
+                                id: 'Text8',
+                                text: '<p style=\"margin: 0px;\">​G</p>',
                                 align: 'center',
                                 type: 'text'
                             }]
@@ -3494,8 +3524,8 @@
                             type: 'text',
                             align: 'right',
                             id: 'Ruta',
-                            text: '<p style=\"margin: 0px;\">​Español &gt; Pre A1 Introductorio &gt; Mi contexto</p>',
                             textStyle: ['', '', '', '', 'none'],
+                            text: '<p style=\"margin: 0px;\">​Español &gt; Pre A1 Introductorio &gt; Mi contexto</p>',
                             rect: ['0px', '0px', '632px', '41px', 'auto', 'auto']
                         }
                     ],
@@ -3640,8 +3670,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'TextCopy',
-                                textStyle: ['', '', '24px', '', ''],
                                 text: '<p style=\"margin: 0px;\">​Resultados</p>',
+                                textStyle: ['', '', '24px', '', ''],
                                 rect: ['21px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -3735,8 +3765,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'Text',
-                                textStyle: ['', '', '24px', '', ''],
                                 text: '<p style=\"margin: 0px;\">​Preguntas</p>',
+                                textStyle: ['', '', '24px', '', ''],
                                 rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -3830,8 +3860,8 @@
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'Text',
-                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 type: 'text'
                             }]
                         }
@@ -3925,8 +3955,8 @@
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'Text',
-                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 type: 'text'
                             }]
                         }
@@ -4020,8 +4050,8 @@
                                 font: ['source-sans-pro, sans-serif', [22, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', '', 'break-word', 'nowrap'],
                                 align: 'center',
                                 id: 'Text',
-                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 textStyle: ['', '', '24px', '', ''],
+                                text: '<p style=\"margin: 0px;\">​Preguntas</p>',
                                 type: 'text'
                             }]
                         }
@@ -4115,8 +4145,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'Text',
-                                textStyle: ['', '', '24px', '', ''],
                                 text: '<p style=\"margin: 0px;\">​Preguntas</p>',
+                                textStyle: ['', '', '24px', '', ''],
                                 rect: ['17px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -4211,8 +4241,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'TextCopy',
-                                textStyle: ['', '', '24px', '', ''],
                                 text: '<p style=\"margin: 0px;\">​Empecemos</p>',
+                                textStyle: ['', '', '24px', '', ''],
                                 rect: ['14px', '11px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
@@ -4297,15 +4327,15 @@
                                 id: 'respuestas-02',
                                 type: 'image',
                                 rect: ['-6px', '-6px', '142px', '142px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/respuestas-02.png', '0px', '0px']
+                                fill: ['rgba(0,0,0,0)', 'images/R7-37.png', '0px', '0px']
                             },
                             {
-                                font: ['sena_icon', [83, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
+                                font: ['sena_icon', [83, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
                                 type: 'text',
-                                align: 'center',
+                                textStyle: ['', '', '127px', '1px', 'none'],
                                 id: 'Text2Copy2',
                                 text: '<p style=\"margin: 0px;\">​K</p>',
-                                textStyle: ['', '', '127px', '1px', 'none'],
+                                align: 'center',
                                 rect: ['0px', '0px', '130px', '130px', 'auto', 'auto']
                             }]
                         }
@@ -4325,14 +4355,14 @@
                     },
                     data: [
                         [
-                            "eid47",
+                            "eid15",
                             "color",
                             0,
                             0,
                             "linear",
                             "${Text2Copy2}",
-                            'rgba(255,182,0,0.00)',
-                            'rgba(255,182,0,0.00)'
+                            'rgba(255,255,255,1.00)',
+                            'rgba(255,255,255,1.00)'
                         ],
                         [
                             "eid32",
@@ -4421,9 +4451,9 @@
                             {
                                 font: ['source-code-pro, sans-serif', [30, 'px'], 'rgba(255,255,255,1)', '600', 'none', 'normal', 'break-word', ''],
                                 type: 'text',
-                                textStyle: ['', '', '120px', '', 'none'],
-                                id: 'numeros',
                                 text: '<p style=\"margin: 0px;\">9-10</p>',
+                                id: 'numeros',
+                                textStyle: ['', '', '120px', '', 'none'],
                                 align: 'center',
                                 rect: ['0px', '0px', '120px', '120px', 'auto', 'auto']
                             }]
@@ -4543,8 +4573,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">7-8</p>',
                                 textStyle: ['', '', '120px', '', 'none'],
+                                text: '<p style=\"margin: 0px;\">7-8</p>',
                                 rect: ['0px', '0px', '120px', '120px', 'auto', 'auto']
                             }]
                         }
@@ -4663,8 +4693,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">5-6</p>',
                                 textStyle: ['', '', '120px', '', 'none'],
+                                text: '<p style=\"margin: 0px;\">5-6</p>',
                                 rect: ['0px', '0px', '120px', '120px', 'auto', 'auto']
                             }]
                         }
@@ -4783,8 +4813,8 @@
                                 type: 'text',
                                 align: 'center',
                                 id: 'numeros',
-                                text: '<p style=\"margin: 0px;\">3-4</p>',
                                 textStyle: ['', '', '120px', '', 'none'],
+                                text: '<p style=\"margin: 0px;\">3-4</p>',
                                 rect: ['0px', '0px', '120px', '120px', 'auto', 'auto']
                             }]
                         }
@@ -5000,15 +5030,15 @@
                                 type: 'image',
                                 id: 'empecemos_btn',
                                 rect: ['5px', '5px', '120px', '120px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/empecemos_btn2.png', '0px', '0px']
+                                fill: ['rgba(0,0,0,0)', 'images/r1-38.png', '0px', '0px']
                             },
                             {
-                                font: ['sena_icon', [97, 'px'], 'rgba(255,182,0,0.00)', '400', 'none', 'normal', 'break-word', ''],
+                                font: ['sena_icon', [97, 'px'], 'rgba(255,255,255,1.00)', '400', 'none', 'normal', 'break-word', ''],
                                 type: 'text',
-                                align: 'center',
+                                textStyle: ['', '', '129px', '2px', 'none'],
                                 id: 'Text2Copy',
                                 text: '<p style=\"margin: 0px;\">​B</p>',
-                                textStyle: ['', '', '129px', '2px', 'none'],
+                                align: 'center',
                                 rect: ['-1px', '1px', '131px', '130px', 'auto', 'auto']
                             }]
                         }
@@ -5080,11 +5110,11 @@
                 content: {
                     dom: [
                         {
-                            rect: ['-1830px', '0px', '1838', '785', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'container',
                             symbolName: 'container',
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            type: 'rect'
+                            rect: ['-1830px', '0px', '1838', '785', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -5130,11 +5160,21 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '158px', '28px', 'auto', 'auto'],
-                            id: 'Rectangle',
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             type: 'rect',
-                            fill: ['rgba(192,192,192,1)']
+                            id: 'RoundRect',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            rect: ['-26px', '-2px', '213px', '31px', 'auto', 'auto'],
+                            borderRadius: ['23px', '23px', '23px', '23px 23px'],
+                            fill: ['rgba(192,192,192,1)', [270, [['rgba(111,67,158,1.00)', 50], ['rgba(84,53,118,1.00)', 50]]]],
+                            c: [
+                            {
+                                font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal'],
+                                type: 'text',
+                                id: 'texto_12',
+                                text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"font-family: source-sans-pro, sans-serif; font-weight: 600; color: rgb(255, 255, 255);\">Enviar</span></p>',
+                                textShadow: ['rgba(0,0,0,0.65098)', 1, 1, 1],
+                                rect: ['19px', '0px', '174px', '31px', 'auto', 'auto']
+                            }]
                         }
                     ],
                     style: {
@@ -5144,10 +5184,33 @@
                     }
                 },
                 timeline: {
-                    duration: 0,
+                    duration: 2000,
                     autoPlay: true,
+                    labels: {
+                        "on": 0,
+                        "off": 1000
+                    },
                     data: [
-
+                        [
+                            "eid20",
+                            "background-image",
+                            0,
+                            1000,
+                            "linear",
+                            "${RoundRect}",
+                            [270,[['rgba(111,67,158,1.00)',50],['rgba(84,52,117,1.00)',50]]],
+                            [270,[['rgba(173,145,204,1.00)',50],['rgba(137,101,175,1.00)',50]]]
+                        ],
+                        [
+                            "eid25",
+                            "background-image",
+                            1000,
+                            1000,
+                            "linear",
+                            "${RoundRect}",
+                            [270,[['rgba(173,145,204,1.00)',50],['rgba(137,101,175,1.00)',50]]],
+                            [270,[['rgba(111,67,158,1.00)',50],['rgba(84,52,117,1.00)',50]]]
+                        ]
                     ]
                 }
             },
@@ -5163,9 +5226,9 @@
                         {
                             type: 'text',
                             id: 'Text',
-                            text: '<p style=\"margin: 0px;\">​A</p>',
+                            text: '<p style=\"margin: 0px;\">​<font face=\"sena_icon\">z</font><font face=\"sena_icon\">​</font></p>',
                             rect: ['1482px', '691px', 'auto', 'auto', 'auto', 'auto'],
-                            font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap']
+                            font: ['sena_icon', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap']
                         }
                     ],
                     style: {
@@ -5194,9 +5257,9 @@
                         {
                             type: 'text',
                             rect: ['1540px', '691px', 'auto', 'auto', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">​B</p>',
-                            id: 'Text2',
                             textStyle: ['', '', '', '', 'none'],
+                            id: 'Text2',
+                            text: '<p style=\"margin: 0px;\">​B</p>',
                             align: 'left',
                             font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'normal', 'break-word', 'nowrap']
                         }
@@ -5204,6 +5267,114 @@
                     style: {
                         '${symbolSelector}': {
                             rect: [null, null, '0px', '0px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "btn_regresar": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(79,45,102,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
+                            align: 'left',
+                            id: 'Text',
+                            text: '<p style=\"margin: 0px;\">​5</p>',
+                            textStyle: ['', '', '', '', 'none'],
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '70px', '70px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+                        [
+                            "eid18",
+                            "left",
+                            0,
+                            0,
+                            "linear",
+                            "${Text}",
+                            '0px',
+                            '0px'
+                        ]
+                    ]
+                }
+            },
+            "btn_adelantar": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', 'auto', 'auto', 'auto', 'auto'],
+                            font: ['sena_icon', [70, 'px'], 'rgba(79,45,102,1.00)', '400', 'none', 'normal', 'break-word', 'nowrap'],
+                            align: 'left',
+                            id: 'Text2',
+                            text: '<p style=\"margin: 0px;\">​Z</p>',
+                            textStyle: ['', '', '', '', 'none'],
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '70px', '70px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "texto_paginado": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '115px', '46px', 'auto', 'auto'],
+                            font: ['source-sans-pro, sans-serif', [24, 'px'], 'rgba(79,45,102,1.00)', '700', 'none', 'normal', 'break-word', ''],
+                            align: 'center',
+                            id: 'Text3',
+                            text: '<p style=\"margin: 0px;\">​1 de 12</p>',
+                            textStyle: ['', '', '46px', '', 'none'],
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '115px', '46px']
                         }
                     }
                 },

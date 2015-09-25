@@ -856,13 +856,23 @@
     //Edge symbol: 'contenedor_home'
     (function (symbolName) {
 
-      Symbol.bindElementAction(compId, symbolName, "${btn_atras}", "click", function(sym, e) {
+      
+
+      
+
+      Symbol.bindElementAction(compId, symbolName, "${btn_regresar}", "click", function(sym, e) {
          // introducir aquí código para clic de ratón
          plantilla_atras();
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${btn_adelante}", "click", function(sym, e) {
+      Symbol.bindElementAction(compId, symbolName, "${btn_enviar}", "click", function(sym, e) {
+         // introducir aquí código para clic de ratón
+         do_submit(sym);
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${btn_adelantar}", "click", function(sym, e) {
          // introducir aquí código para clic de ratón
          plantilla_adelante();
       });
@@ -1422,5 +1432,29 @@
    
    })("btn_adelante");
    //Edge symbol end:'btn_adelante'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_regresar'
+   (function(symbolName) {   
+   
+   })("btn_regresar");
+   //Edge symbol end:'btn_regresar'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_adelantar'
+   (function(symbolName) {   
+   
+   })("btn_adelantar");
+   //Edge symbol end:'btn_adelantar'
+
+   //=========================================================
+   
+   //Edge symbol: 'texto_paginado'
+   (function(symbolName) {   
+   
+   })("texto_paginado");
+   //Edge symbol end:'texto_paginado'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-7659645");
