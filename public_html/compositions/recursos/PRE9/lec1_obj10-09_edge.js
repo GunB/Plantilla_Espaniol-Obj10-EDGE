@@ -18,11 +18,11 @@
         ],
         scripts = [
             js+"jquery-1.10.2.js",
-            js+"pickManyUtilities.js",
-            js+"timerUtilities.js",
+            js+"jquery-ui-1.10.4.custom.min.js",
             js+"interactionUtilities.js",
             js+"utility.js",
-            js+"zoomUtilities.js"
+            js+"zoomUtilities.js",
+            js+"dragAndDropUtilities.js"
         ],
         symbols = {
             "stage": {
@@ -164,24 +164,24 @@
                             '90px'
                         ],
                         [
-                            "eid59",
-                            "top",
+                            "eid56",
+                            "left",
                             0,
                             0,
                             "linear",
-                            "${DRAG_1}",
-                            '90px',
-                            '90px'
+                            "${DRAG_2}",
+                            '477px',
+                            '477px'
                         ],
                         [
-                            "eid47",
-                            "top",
+                            "eid46",
+                            "left",
                             0,
                             0,
                             "linear",
                             "${DRAG_3}",
-                            '186px',
-                            '186px'
+                            '477px',
+                            '477px'
                         ],
                         [
                             "eid50",
@@ -194,14 +194,14 @@
                             '806px'
                         ],
                         [
-                            "eid46",
-                            "left",
+                            "eid49",
+                            "top",
                             0,
                             0,
                             "linear",
-                            "${DRAG_3}",
-                            '477px',
-                            '477px'
+                            "${DRAG_4}",
+                            '275px',
+                            '275px'
                         ],
                         [
                             "eid51",
@@ -234,6 +234,16 @@
                             '477px'
                         ],
                         [
+                            "eid47",
+                            "top",
+                            0,
+                            0,
+                            "linear",
+                            "${DRAG_3}",
+                            '186px',
+                            '186px'
+                        ],
+                        [
                             "eid61",
                             "top",
                             0,
@@ -242,16 +252,6 @@
                             "${DROP_2}",
                             '186px',
                             '186px'
-                        ],
-                        [
-                            "eid49",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_4}",
-                            '275px',
-                            '275px'
                         ],
                         [
                             "eid52",
@@ -264,14 +264,14 @@
                             '806px'
                         ],
                         [
-                            "eid58",
-                            "left",
+                            "eid57",
+                            "top",
                             0,
                             0,
                             "linear",
-                            "${DRAG_1}",
-                            '477px',
-                            '477px'
+                            "${DRAG_2}",
+                            '359px',
+                            '359px'
                         ],
                         [
                             "eid60",
@@ -294,24 +294,24 @@
                             '806px'
                         ],
                         [
-                            "eid56",
+                            "eid58",
                             "left",
                             0,
                             0,
                             "linear",
-                            "${DRAG_2}",
+                            "${DRAG_1}",
                             '477px',
                             '477px'
                         ],
                         [
-                            "eid57",
+                            "eid59",
                             "top",
                             0,
                             0,
                             "linear",
-                            "${DRAG_2}",
-                            '359px',
-                            '359px'
+                            "${DRAG_1}",
+                            '90px',
+                            '90px'
                         ]
                     ]
                 }
@@ -334,13 +334,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            rect: ['0px', '3px', '94px', '38px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
-                            type: 'text',
                             align: 'center',
                             id: 'texto_4',
-                            textStyle: ['', '', '', '', 'none'],
                             text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">Las</span></p>',
-                            rect: ['0px', '3px', '94px', '38px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -375,13 +375,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            rect: ['0px', '3px', '94px', '38px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
-                            type: 'text',
                             align: 'center',
                             id: 'texto_3',
-                            textStyle: ['', '', '', '', 'none'],
                             text: '<p style=\"margin: 0px; line-height: 20px;\"><span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">La</span></p>',
-                            rect: ['0px', '3px', '94px', '38px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -416,13 +416,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            rect: ['-14px', '3px', '116px', '38px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
-                            type: 'text',
                             align: 'center',
                             id: 'texto_5',
-                            textStyle: ['', '', '', '', 'none'],
                             text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">Los</span></p>',
-                            rect: ['-14px', '3px', '116px', '38px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            type: 'text'
                         }
                     ],
                     style: {

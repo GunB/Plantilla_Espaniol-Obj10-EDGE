@@ -15,7 +15,6 @@ function resize() {
     var ancho = $("#Stage").width();
     var alto = $("#Stage").height();
     var device = detectZoom.device();
-    
     aplicarZoom(device);
 }
 

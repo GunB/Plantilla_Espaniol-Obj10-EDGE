@@ -11,6 +11,9 @@ $("body").on("EDGE_Recurso_promiseCreated", function(evt){
         identify: stage.prop("ed_identify")
     };
     
+	if(typeof inicializarTimer == 'function'){
+			inicializarTimer(evt.sym);
+		}
     console.log("INTERACTION UTILITIES CREATED", objEvt, stage);
     parent.$(parent.document).trigger(objEvt);
 });
@@ -33,7 +36,7 @@ function enviarEventoInteraccion(tipo, pregunta, respuesta, resultado, intentos_
 
 $("body").on("TimeOut", function (data) {
     var stage = $(data.sym.getComposition().getStage().ele);
-
+	parent.$(parent.document).trigger(data);
     var timer = {};
     var timerObj = buscar_sym(data.sym, stage.prop("timer"), true);
     timer.remaining_time = 0;

@@ -31,7 +31,7 @@ function last_actividad() {
 }
 
 $(document).on("EDGE_Plantilla_creationComplete", function (evt) {
-    
+
     //switch (evt.identify.actividad) {
 });
 
@@ -64,7 +64,7 @@ $("body").on("EDGE_Container_loaded", function () {
         var interactions = LOAD_INTERACTIONS();
         EDGE_Plantilla.temp_scorm = merge_options(EDGE_Plantilla.temp_scorm, interactions);
     }
-    
+
     last_actividad();
 
     //$(document).trigger("resize");
@@ -184,12 +184,12 @@ $("body").on("EDGE_Self_promiseCreating", function (evt) {
         if (page.type === "actividad") {
             var temp_data = actividad_actual();
             paginado.find("p").text(temp_data.key + 1 + " de " + (EDGE_Plantilla.last_actividad - 1));
-            
-            $.each(EDGE_Plantilla.button_nav, function(key, val){
+
+            $.each(EDGE_Plantilla.button_nav, function (key, val) {
                 var borde = $("#Stage_" + val.button + "_borde");
-                if(page.plantilla.button === key){
+                if (page.plantilla.button === key) {
                     borde.css("background-color", "rgba(255,182,0,1.00)");
-                }else{
+                } else {
                     borde.css("background-color", "rgba(204,204,204,1.00)");
                 }
             });
@@ -231,7 +231,7 @@ $("body").on("EDGE_Self_promiseCreating", function (evt) {
 
 function actividad_actual() {
     var str_Id = EDGE_Plantilla.id_pagina_actual;
-    var cont = {key: 0, val:0};
+    var cont = {key: 0, val: 0};
     $.each(EDGE_Plantilla.actividades_cargadas, function (key, val) {
         if (val === str_Id) {
             //mostrar_pagina(EDGE_Plantilla.actividades_cargadas[key - 1]);
@@ -249,3 +249,25 @@ function plantilla_atras() {
 function plantilla_adelante() {
     mostrar_pagina(EDGE_Plantilla.actividades_cargadas[actividad_actual().key + 1]);
 }
+
+$(document).on("EDGE_Plantilla_onChange", function (evt) {
+    console.warn(evt);
+    //do_submit(EDGE_Plantilla.plantilla_sym);
+    $("body").trigger({
+        type: "EDGE_Actividad_Submit"
+                //sym: sym
+    });
+});
+
+$("body").on("EDGE_Actividad_Submit", function (evt) {
+    var value = EDGE_Plantilla.id_pagina_actual;
+    console.log(value, "ENVIANDO EL SUBMIT");
+
+    var pagina = EDGE_Plantilla.config.paginas[value];
+    var stage = EDGE_Plantilla.config.paginas[value].stage;
+
+    console.log(pagina, stage, "ENVIANDO EL SUBMIT");
+
+    $("iframe", buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.basic_contenedor_name.contenedor, true))[0]
+            .contentWindow.$("body").trigger({type: "EDGE_Recurso_Submit", sym: stage});
+});

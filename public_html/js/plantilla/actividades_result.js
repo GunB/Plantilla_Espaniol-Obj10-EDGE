@@ -357,6 +357,7 @@ function R5_QQSM_heiner_submit(evt) {
     merge_temp_scorm(evt.answer);
 
     save_extra_data(objEvt, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -435,6 +436,7 @@ function R5_TRIVIA_toscano_submit(evt) {
     merge_temp_scorm(evt.answer);
 
     save_extra_data(objEvt, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -489,6 +491,7 @@ function R6_heiner_submit(evt) {
     retroalimentacion(strRetro);
     save_extra_data(objEvt, evt);
     merge_temp_scorm(evt.answer);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 
     //puntuación SCORM
@@ -567,6 +570,7 @@ function R6_heiner_submit(evt) {
 
     save_extra_data(objEvt, evt);
     merge_temp_scorm(evt.answer);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -631,6 +635,7 @@ function sopa_letras_toscano_submit(evt) {
     retroalimentacion(strRetro);
     upload_interaction(evt.question, evt.answer, evt.results, evt.interactionType, evt);
     save_extra_data(objEvt, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -694,6 +699,7 @@ function concentrese_santiago_submit(evt) {
     retroalimentacion(strRetro);
     upload_interaction(evt.question, evt.answer, evt.results, evt.interactionType, evt);
     save_extra_data(objEvt, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -747,6 +753,7 @@ function selecting_blanks_santiago_submit(evt) {
     retroalimentacion(strRetro);
     save_extra_data(objEvt, evt);
     upload_interaction(evt.json.pregunta, evt.answer, evt.results, evt.interactionType, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -799,6 +806,7 @@ function filling_blanks_santiago_submit(evt) {
     retroalimentacion(strRetro);
     save_extra_data(objEvt, evt);
     upload_interaction(evt.json.pregunta, evt.answer, evt.results, evt.interactionType, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -849,6 +857,7 @@ function sortable_santiago_submit(evt) {
     retroalimentacion(strRetro);
     save_extra_data(objEvt, evt);
     upload_interaction(evt.json.preguntas, evt.answer, evt.position_which_is_right, evt.interactionType, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -912,7 +921,7 @@ function drag_drop_toscano_submit(evt) {
     retroalimentacion(strRetro);
     save_extra_data(objEvt, evt);
     upload_interaction(evt.question, evt.answer, evt.results, evt.interactionType, evt);
-
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 
@@ -968,6 +977,7 @@ function pick_many_toscano_submit(evt) {
     retroalimentacion(strRetro);
     upload_interaction(evt.question, evt.answer, evt.results, evt.interactionType, evt);
     save_extra_data(objEvt, evt);
+    
     send_evt_to(evt.identify, objEvt, evt.results);
 }
 //</editor-fold>
@@ -1071,6 +1081,10 @@ function retroalimentacion(strRetroalimentacion, type) {
 }
 
 function send_evt_to(pagina, objEvt, results, isSendToFather) {
+    if(objEvt.block){
+        delete objEvt.block;
+    }
+    
     if (isEmpty(pagina)) {
         console.error("NOT SEND TO FATHER", objEvt);
         return false;
