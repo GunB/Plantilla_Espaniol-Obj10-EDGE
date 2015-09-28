@@ -66,15 +66,15 @@ function aplicarZoom(zoomLevel){
 				newHeight = 10;
 				newHeight += parseInt($(this).css("top"), 10);
 				
-				console.log(newHeight);
+				//console.log(newHeight);
 				$('p', this).each(function () {
-					console.log($(this).height());
+					//console.log($(this).height());
 					newHeight += $(this).height();
 				});
 				
 				var pushedObj = $("[zoomId="+$(this).attr("zoomPush")+"]");
-				console.log($(this).attr("id"));
-				console.log(newHeight + " > "+ pushedObj.prop("originalPosition"));
+				//console.log($(this).attr("id"));
+				//console.log(newHeight + " > "+ pushedObj.prop("originalPosition"));
 				if(zoomLevel > 1 && (newHeight > pushedObj.prop("originalPosition"))){
 					pushedObj.css("top", newHeight);
 				}else{

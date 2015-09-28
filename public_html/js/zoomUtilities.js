@@ -10,7 +10,7 @@ $("body").on("EDGE_Container_loaded", function () {
     inicializarZoom();
     $(window).on('resize', resize);
     resize();
-    //console.log("Terminé");
+    ////console.log("Terminé");
 });
 
 function resize() {
@@ -20,7 +20,7 @@ function resize() {
     //var zoom = detectZoom.zoom();
     var device = detectZoom.device();
 
-    //console.warn("ZOOM LEVEL", device);
+    ////console.warn("ZOOM LEVEL", device);
 
     aplicarZoom(device);
 }
@@ -70,7 +70,7 @@ function aplicarZoom(zoomLevel) {
             });
 
             var pushedObj = $("[zoomId=" + $(this).attr("zoomPush") + "]");
-            //console.log(newHeight + " > "+ pushedObj.prop("originalPosition").top);
+            ////console.log(newHeight + " > "+ pushedObj.prop("originalPosition").top);
             if (zoomLevel > 1 && (newHeight > pushedObj.prop("originalPosition").top)) {
                 pushedObj.css("top", newHeight);
             } else {

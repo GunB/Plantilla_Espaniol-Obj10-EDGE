@@ -88,7 +88,7 @@
         },
         "7": {
             "type": "actividad",
-            "recurso": "2",
+            "recurso": "7",
             "actividad": "pick_many",
             "url": "recursos/PRE6/lec1_obj10-06.html",
             "interaction": {
