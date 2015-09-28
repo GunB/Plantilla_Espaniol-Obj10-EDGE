@@ -140,13 +140,14 @@ function inicializarPicks(sym) {
                 contRespuestas++;
             }
         }
-
+	
         pickObj.prop("selected", false);
         pickObj.prop("esRespuesta", esRespuesta);
         pickObj.prop("correct", !esRespuesta);
         pickObj.prop("descripcion", objPicks[i].descripcion);
         pickObj.prop("nombre", "PICK_" + i);
         pickObj.prop("current_state", "normal");
+		console.log(pickObj.prop("nombre")+" selected = "+ pickObj.prop("selected"));
     }
 
     if (contRespuestas > 1) {
@@ -162,20 +163,20 @@ function inicializarPicks(sym) {
 function pickClickeado(sym, nombrePick) {
     var stage = $(sym.getComposition().getStage().ele);
     if (!stage.prop("blocked")) {
-
+		var change = true;
         switch (stage.prop("tipo")) {
             case "one":
             {
-                var CANTIDAD_PICKS = stage.prop("cantidad_picks");
-                for (var i = 0; i <= CANTIDAD_PICKS; i++) {
-                    if (nombrePick !== "PICK_" + i) {
-                        deseleccionarPick(sym, "PICK_" + i);
-                    }
-                    else {
-                        seleccionarPick(sym, nombrePick);
-                    }
-                }
-                break;
+				change = seleccionarPick(sym, nombrePick);
+				if(change){
+					var CANTIDAD_PICKS = stage.prop("cantidad_picks");
+					for (var i = 1; i <= CANTIDAD_PICKS; i++) {
+						if (nombrePick !== "PICK_" + i) {
+							deseleccionarPick(sym, "PICK_" + i);
+						}
+					}
+				}
+				break;
             }
 
             case "many":
@@ -184,6 +185,10 @@ function pickClickeado(sym, nombrePick) {
                 break;
             }
         }
+		
+		if(change){
+			enviarCambios(sym);
+		}
     }
 }
 
@@ -204,19 +209,24 @@ function seleccionarPick(sym, nombrePick) {
 
         pickObj.prop("selected", !boolSelected);
         pickObj.prop("correct", pickObj.prop("esRespuesta") === pickObj.prop("selected"));
-	enviarCambios(sym);
-    }
+		return true;
+    }else
+	{
+		return false;
+	}
 }
 
 //**********************************************************************************
 
 function deseleccionarPick(sym, nombrePick) {
     var pickObj = sym.$(nombrePick);
+	console.log("deseleccionar "+nombrePick+" "+pickObj.prop("selected"));
     if (pickObj.prop("selected")) {
         pickObj.prop("selected", false);
         cambiarEstadoPick(sym, nombrePick, "normal")
         pickObj.prop("correct", pickObj.prop("esRespuesta") === pickObj.prop("selected"));
     }
+	console.log(pickObj.prop("selected"));
 }
 
 //**********************************************************************************
