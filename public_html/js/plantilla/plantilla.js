@@ -48,8 +48,6 @@ $("body").on("EDGE_Container_loaded", function () {
         EDGE_Plantilla.temp_scorm = merge_options(EDGE_Plantilla.temp_scorm, interactions);
     }
 
-    last_actividad();
-
     //$(document).trigger("resize");
 
 });
@@ -237,16 +235,24 @@ EDGE_Plantilla.actividades_cargadas = [];
 EDGE_Plantilla.play_templateButtons = {};
 
 function last_actividad() {
-    
     var last_actividad = "1";
     $.each(EDGE_Plantilla.config.paginas, function (key, val) {
         if (val.type === "actividad") {
             EDGE_Plantilla.actividades_cargadas.push(key);
-        }
-        if (!isNaN(parseInt(key))) {
-            last_actividad = key;
-        } else {
-            return false;
+            var button = val.plantilla.button;
+            
+            if(isEmpty(EDGE_Plantilla.play_templateButtons[button])){
+                EDGE_Plantilla.play_templateButtons[button] = [];
+            }
+            
+            EDGE_Plantilla.play_templateButtons[button].push(val.recurso);
+            
+            if (!isNaN(parseInt(key))) {
+                last_actividad = key;
+            } else {
+                return false;
+            }
+            //play_templateButtons
         }
     });
     EDGE_Plantilla.last_actividad = last_actividad;
@@ -274,6 +280,10 @@ $("body").on("EDGE_Actividad_Submit", function (evt) {
             .contentWindow.$("body").trigger({type: "EDGE_Recurso_Submit", sym: stage});
 });
 
-$("body").on("EDGE_Plantilla_postSubmitApplied", function(evt){
+$("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function (evt) {
+    if (isEmpty(EDGE_Plantilla.actividades_cargadas)) {
+        last_actividad();
+    }
     
+    //console.log(EDGE_Plantilla.play_templateButtons);
 });
