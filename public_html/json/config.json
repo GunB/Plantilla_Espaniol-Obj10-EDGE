@@ -117,7 +117,7 @@
         "9": {
             "type": "actividad",
             "recurso": "9",
-            "actividad": "drag_drop",
+            "actividad": "pick_many",
             "url": "recursos/PRE8/lec1_obj10-08.html",
             "interaction": {
                 "ALL": true
@@ -131,7 +131,7 @@
         "10": {
             "type": "actividad",
             "recurso": "10",
-            "actividad": "pick_many",
+            "actividad": "drag_drop",
             "url": "recursos/PRE9/lec1_obj10-09.html",
             "interaction": {
                 "ALL": true
