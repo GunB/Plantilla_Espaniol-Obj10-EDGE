@@ -13,23 +13,6 @@ EDGE_Plantilla.btn_navegacion = {
     enviar: ["contenedor_home", "btn_enviar"]
 };
 
-EDGE_Plantilla.actividades_cargadas = [];
-
-function last_actividad() {
-    var last_actividad = "1";
-    $.each(EDGE_Plantilla.config.paginas, function (key, val) {
-        if (val.type === "actividad") {
-            EDGE_Plantilla.actividades_cargadas.push(key);
-        }
-        if (!isNaN(parseInt(key))) {
-            last_actividad = key;
-        } else {
-            return false;
-        }
-    });
-    EDGE_Plantilla.last_actividad = last_actividad;
-}
-
 $(document).on("EDGE_Plantilla_creationComplete", function (evt) {
 
     //switch (evt.identify.actividad) {
@@ -250,8 +233,27 @@ function plantilla_adelante() {
     mostrar_pagina(EDGE_Plantilla.actividades_cargadas[actividad_actual().key + 1]);
 }
 
+EDGE_Plantilla.actividades_cargadas = [];
+EDGE_Plantilla.play_templateButtons = {};
+
+function last_actividad() {
+    
+    var last_actividad = "1";
+    $.each(EDGE_Plantilla.config.paginas, function (key, val) {
+        if (val.type === "actividad") {
+            EDGE_Plantilla.actividades_cargadas.push(key);
+        }
+        if (!isNaN(parseInt(key))) {
+            last_actividad = key;
+        } else {
+            return false;
+        }
+    });
+    EDGE_Plantilla.last_actividad = last_actividad;
+}
+
 $(document).on("EDGE_Plantilla_onChange", function (evt) {
-    console.warn(evt);
+    //console.warn(evt);
     //do_submit(EDGE_Plantilla.plantilla_sym);
     $("body").trigger({
         type: "EDGE_Actividad_Submit"
@@ -261,13 +263,17 @@ $(document).on("EDGE_Plantilla_onChange", function (evt) {
 
 $("body").on("EDGE_Actividad_Submit", function (evt) {
     var value = EDGE_Plantilla.id_pagina_actual;
-    console.log(value, "ENVIANDO EL SUBMIT");
+    //console.log(value, "ENVIANDO EL SUBMIT");
 
     var pagina = EDGE_Plantilla.config.paginas[value];
     var stage = EDGE_Plantilla.config.paginas[value].stage;
 
-    console.log(pagina, stage, "ENVIANDO EL SUBMIT");
+    //console.log(pagina, stage, "ENVIANDO EL SUBMIT");
 
     $("iframe", buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.basic_contenedor_name.contenedor, true))[0]
             .contentWindow.$("body").trigger({type: "EDGE_Recurso_Submit", sym: stage});
+});
+
+$("body").on("EDGE_Plantilla_postSubmitApplied", function(evt){
+    
 });

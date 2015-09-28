@@ -1085,6 +1085,8 @@ function send_evt_to(pagina, objEvt, results, isSendToFather) {
         delete objEvt.block;
     }
     
+    
+    
     if (isEmpty(pagina)) {
         console.error("NOT SEND TO FATHER", objEvt);
         return false;
@@ -1118,6 +1120,13 @@ function send_evt_to(pagina, objEvt, results, isSendToFather) {
         default :
             break;
     }
+    
+    var objEvt = {
+        type: "EDGE_Plantilla_postSubmitApplied",
+        all: objEvt
+    };
+    
+    $("body").trigger(objEvt);
 
 }
 
