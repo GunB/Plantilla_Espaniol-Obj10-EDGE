@@ -15,6 +15,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
          // Insertar código para ejecutarse cuando el símbolo se crea aquí - M'kay
+         inicializarDragAndDrop(sym);
          //ed_send_data(sym);//volver a comentario
 
       });
@@ -77,18 +78,18 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //=========================================================
    
-   //Edge symbol: 'DROP_4'
-   (function(symbolName) {   
-   
-   })("DROP_4");
-   //Edge symbol end:'DROP_4'
-
-   //=========================================================
-   
    //Edge symbol: 'DROP_3'
    (function(symbolName) {   
    
    })("DROP_3");
    //Edge symbol end:'DROP_3'
+
+   //=========================================================
+   
+   //Edge symbol: 'DROP_4'
+   (function(symbolName) {   
+   
+   })("DROP_4");
+   //Edge symbol end:'DROP_4'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-14164065");

@@ -19,10 +19,10 @@
         scripts = [
             js+"jquery-1.10.2.js",
             js+"jquery-ui-1.10.4.custom.min.js",
+            js+"dragAndDropUtilities.js",
             js+"interactionUtilities.js",
             js+"utility.js",
-            js+"zoomUtilities.js",
-            js+"dragAndDropUtilities.js"
+            js+"zoomUtilities.js"
         ],
         symbols = {
             "stage": {
@@ -51,56 +51,28 @@
                             stroke: [0,"rgba(0,0,0,1)","none"],
                             c: [
                             {
-                                id: 'DROP_3',
-                                symbolName: 'DROP_3',
+                                id: 'DROP_1',
+                                symbolName: 'DROP_1',
                                 type: 'rect',
-                                rect: ['806px', '278px', '109', '48', 'auto', 'auto']
+                                rect: ['811px', '82px', '109', '62', 'auto', 'auto']
                             },
                             {
                                 id: 'DROP_4',
                                 symbolName: 'DROP_4',
                                 type: 'rect',
-                                rect: ['806px', '359px', '109', '48', 'auto', 'auto']
+                                rect: ['812px', '283px', 'undefined', 'undefined', 'auto', 'auto']
+                            },
+                            {
+                                id: 'DROP_3',
+                                symbolName: 'DROP_3',
+                                type: 'rect',
+                                rect: ['812px', '367px', 'undefined', 'undefined', 'auto', 'auto']
                             },
                             {
                                 id: 'DROP_2',
                                 symbolName: 'DROP_2',
                                 type: 'rect',
-                                rect: ['806px', '186px', '109', '48', 'auto', 'auto']
-                            },
-                            {
-                                id: 'DROP_1',
-                                symbolName: 'DROP_1',
-                                type: 'rect',
-                                rect: ['806px', '90px', '109', '48', 'auto', 'auto']
-                            },
-                            {
-                                id: 'DRAG_1',
-                                symbolName: 'DRAG_1',
-                                type: 'rect',
-                                rect: ['477px', '90px', '94', '48', 'auto', 'auto'],
-                                cursor: 'pointer'
-                            },
-                            {
-                                id: 'DRAG_2',
-                                symbolName: 'DRAG_2',
-                                type: 'rect',
-                                rect: ['477px', '359px', 'undefined', 'undefined', 'auto', 'auto'],
-                                cursor: 'pointer'
-                            },
-                            {
-                                id: 'DRAG_3',
-                                symbolName: 'DRAG_3',
-                                type: 'rect',
-                                rect: ['477px', '186px', 'undefined', 'undefined', 'auto', 'auto'],
-                                cursor: 'pointer'
-                            },
-                            {
-                                id: 'DRAG_4',
-                                symbolName: 'DRAG_4',
-                                type: 'rect',
-                                rect: ['477px', '275px', 'undefined', 'undefined', 'auto', 'auto'],
-                                cursor: 'pointer'
+                                rect: ['811px', '187px', 'undefined', 'undefined', 'auto', 'auto']
                             },
                             {
                                 id: 'texto_8',
@@ -137,6 +109,34 @@
                                 align: "left",
                                 font: ['source-sans-pro, sans-serif', [28, "px"], "rgba(51,51,51,1.00)", "400", "none", "normal", "break-word", "normal"],
                                 textStyle: ["", "", "", "", "none"]
+                            },
+                            {
+                                id: 'DRAG_1',
+                                symbolName: 'DRAG_1',
+                                type: 'rect',
+                                rect: ['545px', '186px', 'undefined', 'undefined', 'auto', 'auto'],
+                                cursor: 'pointer'
+                            },
+                            {
+                                id: 'DRAG_2',
+                                symbolName: 'DRAG_2',
+                                type: 'rect',
+                                rect: ['545px', '283px', 'undefined', 'undefined', 'auto', 'auto'],
+                                cursor: 'pointer'
+                            },
+                            {
+                                id: 'DRAG_3',
+                                symbolName: 'DRAG_3',
+                                type: 'rect',
+                                rect: ['545px', '368px', 'undefined', 'undefined', 'auto', 'auto'],
+                                cursor: 'pointer'
+                            },
+                            {
+                                id: 'DRAG_4',
+                                symbolName: 'DRAG_4',
+                                type: 'rect',
+                                rect: ['545px', '82px', 'undefined', 'undefined', 'auto', 'auto'],
+                                cursor: 'pointer'
                             }]
                         }
                     ],
@@ -153,166 +153,7 @@
                     duration: 0,
                     autoPlay: true,
                     data: [
-                        [
-                            "eid53",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_1}",
-                            '90px',
-                            '90px'
-                        ],
-                        [
-                            "eid56",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_2}",
-                            '477px',
-                            '477px'
-                        ],
-                        [
-                            "eid46",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_3}",
-                            '477px',
-                            '477px'
-                        ],
-                        [
-                            "eid50",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_3}",
-                            '806px',
-                            '806px'
-                        ],
-                        [
-                            "eid49",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_4}",
-                            '275px',
-                            '275px'
-                        ],
-                        [
-                            "eid51",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_3}",
-                            '278px',
-                            '278px'
-                        ],
-                        [
-                            "eid55",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_4}",
-                            '359px',
-                            '359px'
-                        ],
-                        [
-                            "eid48",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_4}",
-                            '477px',
-                            '477px'
-                        ],
-                        [
-                            "eid47",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_3}",
-                            '186px',
-                            '186px'
-                        ],
-                        [
-                            "eid61",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_2}",
-                            '186px',
-                            '186px'
-                        ],
-                        [
-                            "eid52",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_1}",
-                            '806px',
-                            '806px'
-                        ],
-                        [
-                            "eid57",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_2}",
-                            '359px',
-                            '359px'
-                        ],
-                        [
-                            "eid60",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_2}",
-                            '806px',
-                            '806px'
-                        ],
-                        [
-                            "eid54",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DROP_4}",
-                            '806px',
-                            '806px'
-                        ],
-                        [
-                            "eid58",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_1}",
-                            '477px',
-                            '477px'
-                        ],
-                        [
-                            "eid59",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${DRAG_1}",
-                            '90px',
-                            '90px'
-                        ]
+
                     ]
                 }
             },
@@ -334,13 +175,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            type: 'text',
                             rect: ['0px', '3px', '94px', '38px', 'auto', 'auto'],
-                            font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
                             align: 'center',
                             id: 'texto_4',
-                            text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">Las</span></p>',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">Las</span></p>',
+                            font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -375,13 +216,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            type: 'text',
                             rect: ['0px', '3px', '94px', '38px', 'auto', 'auto'],
-                            font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
                             align: 'center',
                             id: 'texto_3',
-                            text: '<p style=\"margin: 0px; line-height: 20px;\"><span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">La</span></p>',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            text: '<p style=\"margin: 0px; line-height: 20px;\"><span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">La</span></p>',
+                            font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -416,13 +257,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            type: 'text',
                             rect: ['-14px', '3px', '116px', '38px', 'auto', 'auto'],
-                            font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
                             align: 'center',
                             id: 'texto_5',
-                            text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">Los</span></p>',
                             textStyle: ['', '', '', '', 'none'],
-                            type: 'text'
+                            text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">Los</span></p>',
+                            font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal']
                         }
                     ],
                     style: {
@@ -457,13 +298,13 @@
                             fill: ['rgba(139,116,161,1)']
                         },
                         {
+                            rect: ['-12px', '3px', '114px', '38px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'italic', 'break-word', 'normal'],
-                            type: 'text',
                             align: 'center',
                             id: 'texto_2',
-                            textStyle: ['', '', '', '', 'none'],
                             text: '<p style=\"margin: 0px; line-height: 20px;\">​<span style=\"font-style: normal; color: rgb(252, 244, 244); font-size: 26px;\">El</span></p>',
-                            rect: ['-12px', '3px', '114px', '38px', 'auto', 'auto']
+                            textStyle: ['', '', '', '', 'none'],
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -490,9 +331,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '101px', '40px', 'auto', 'auto'],
+                            rect: ['0px', '0px', '101px', '54px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            id: 'RoundRect2Copy3',
+                            id: 'RoundRect2',
                             stroke: [4, 'rgba(84,53,118,1.00)', 'solid'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
@@ -500,7 +341,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '109px', '48px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '109px', '62px']
                         }
                     }
                 },
@@ -522,9 +364,9 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '101px', '40px', 'auto', 'auto'],
+                            rect: ['0px', '0px', '101px', '54px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
-                            id: 'RoundRect2Copy2',
+                            id: 'RoundRect2',
                             stroke: [4, 'rgba(84,53,118,1.00)', 'solid'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
@@ -532,39 +374,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '109px', '48px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-
-                    ]
-                }
-            },
-            "DROP_4": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: ['0px', '0px', '101px', '40px', 'auto', 'auto'],
-                            borderRadius: ['10px', '10px', '10px', '10px'],
-                            id: 'RoundRect2Copy',
-                            stroke: [4, 'rgba(84,53,118,1.00)', 'solid'],
-                            type: 'rect',
-                            fill: ['rgba(255,255,255,1.00)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '109px', '48px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '109px', '62px']
                         }
                     }
                 },
@@ -586,7 +397,7 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '101px', '40px', 'auto', 'auto'],
+                            rect: ['0px', '0px', '101px', '54px', 'auto', 'auto'],
                             borderRadius: ['10px', '10px', '10px', '10px'],
                             id: 'RoundRect2',
                             stroke: [4, 'rgba(84,53,118,1.00)', 'solid'],
@@ -596,7 +407,41 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '109px', '48px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '109px', '62px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "DROP_4": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '101px', '54px', 'auto', 'auto'],
+                            borderRadius: ['10px', '10px', '10px', '10px'],
+                            id: 'RoundRect2',
+                            stroke: [4, 'rgba(84,53,118,1.00)', 'solid'],
+                            type: 'rect',
+                            fill: ['rgba(255,255,255,1.00)']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '109px', '62px']
                         }
                     }
                 },
