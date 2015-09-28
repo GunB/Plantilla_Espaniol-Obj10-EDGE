@@ -117,7 +117,7 @@
         "9": {
             "type": "actividad",
             "recurso": "9",
-            "actividad": "pick_many",
+            "actividad": "drag_drop",
             "url": "recursos/PRE8/lec1_obj10-08.html",
             "interaction": {
                 "ALL": true
