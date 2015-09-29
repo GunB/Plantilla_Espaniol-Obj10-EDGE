@@ -240,13 +240,13 @@ function last_actividad() {
         if (val.type === "actividad") {
             EDGE_Plantilla.actividades_cargadas.push(key);
             var button = val.plantilla.button;
-            
-            if(isEmpty(EDGE_Plantilla.play_templateButtons[button])){
+
+            if (isEmpty(EDGE_Plantilla.play_templateButtons[button])) {
                 EDGE_Plantilla.play_templateButtons[button] = [];
             }
-            
+
             EDGE_Plantilla.play_templateButtons[button].push(val.recurso);
-            
+
             if (!isNaN(parseInt(key))) {
                 last_actividad = key;
             } else {
@@ -284,6 +284,35 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
     if (isEmpty(EDGE_Plantilla.actividades_cargadas)) {
         last_actividad();
     }
-    
+
+    console.log(EDGE_Plantilla.play_templateButtons);
+
+    $.each(EDGE_Plantilla.play_templateButtons, function (key, value) {
+        var objbul = true;
+        //console.log(EDGE_Plantilla.button_nav[key].button);
+        
+        $.each(value, function (k, v) {
+            var pagina = EDGE_Plantilla.config.paginas[v];
+            
+            var objEvt = {identify: pagina};
+            var objResp = get_interactions_by_start(objEvt);
+            //console.log(objResp, k, v);
+            if (isEmpty(objResp)) {
+                objbul = false;
+                return false;
+            }
+        });
+
+        if (objbul) {
+            var button = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.button_nav[key].button, true);
+            var fondo = button.find("[id$=boton]");
+            
+            fondo.css({background: "#0E0903"});
+            //console.log(fondo);
+            //button.stop("M_a");
+        }else{
+            //button.stop("a");
+        }
+    });
     //console.log(EDGE_Plantilla.play_templateButtons);
 });

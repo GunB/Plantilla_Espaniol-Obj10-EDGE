@@ -1260,7 +1260,10 @@ function get_interactions_by_start(evt) {
 
     if (!isEmpty(objData)) {
         if (pagina.interaction.ALL) {
-            objData = objData[0];
+            $.each(objData, function(v){
+                objData = v;
+                return false;
+            });
         }
     }
 
