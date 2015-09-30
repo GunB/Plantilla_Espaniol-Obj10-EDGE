@@ -159,7 +159,7 @@
         "respuestas": {
             "type": "recurso",
             "recurso": "12",
-            "url": "recursos/PRE10/lec1_obj10-10.html",
+            "url": "elementos_plantilla/Respuestas/RespuestasOb10.html",
             "titulo": "Resultados",
             "subtitulo": "Las letras"
         },

@@ -284,16 +284,18 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
     if (isEmpty(EDGE_Plantilla.actividades_cargadas)) {
         last_actividad();
     }
+    
+    EDGE_Plantilla.ready_actividades = true;
 
     console.log(EDGE_Plantilla.play_templateButtons);
 
     $.each(EDGE_Plantilla.play_templateButtons, function (key, value) {
         var objbul = true;
         //console.log(EDGE_Plantilla.button_nav[key].button);
-        
+
         $.each(value, function (k, v) {
             var pagina = EDGE_Plantilla.config.paginas[v];
-            
+
             var objEvt = {identify: pagina};
             var objResp = get_interactions_by_start(objEvt);
             //console.log(objResp, k, v);
@@ -303,16 +305,49 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
             }
         });
 
+        var button = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.button_nav[key].button, true);
+        var fondo = button.find("[id$=boton]");
+        fondo.removeClass("boton-rojo").removeClass("boton-morado").css({
+            "background-color": "",
+            "background-image": "",
+            "background": ""
+        });
+
+        var objRojo = {
+            "0": "#e85a40", /* Old browsers */
+            "1": "-moz-radial-gradient(center, ellipse cover,  #e85a40 18%, #b82f16 80%)", /* FF3.6+ */
+            "2": "-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(18%,#e85a40), color-stop(80%,#b82f16))", /* Chrome,Safari4+ */
+            "3": "-webkit-radial-gradient(center, ellipse cover,  #e85a40 18%,#b82f16 80%)", /* Chrome10+,Safari5.1+ */
+            "4": "-o-radial-gradient(center, ellipse cover,  #e85a40 18%,#b82f16 80%)", /* Opera 12+ */
+            "5": "-ms-radial-gradient(center, ellipse cover,  #e85a40 18%,#b82f16 80%)", /* IE10+ */
+            "6": "radial-gradient(ellipse at center,  #e85a40 18%,#b82f16 80%)", /* W3C */
+        };
+
+        var objMorado = {
+            "0": "#4f2d6e", /* Old browsers */
+            "1": "-moz-radial-gradient(center, ellipse cover,  #4f2d6e 18%, #341054 80%)", /* FF3.6+ */
+            "2": "-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(18%,#4f2d6e), color-stop(80%,#341054))", /* Chrome,Safari4+ */
+            "3": "-webkit-radial-gradient(center, ellipse cover,  #4f2d6e 18%,#341054 80%)", /* Chrome10+,Safari5.1+ */
+            "4": "-o-radial-gradient(center, ellipse cover,  #4f2d6e 18%,#341054 80%)", /* Opera 12+ */
+            "5": "-ms-radial-gradient(center, ellipse cover,  #4f2d6e 18%,#341054 80%)", /* IE10+ */
+            "6": "radial-gradient(ellipse at center,  #4f2d6e 18%,#341054 80%)" /* W3C */
+        };
+
         if (objbul) {
-            var button = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.button_nav[key].button, true);
-            var fondo = button.find("[id$=boton]");
-            
-            fondo.css({background: "#0E0903"});
-            //console.log(fondo);
-            //button.stop("M_a");
-        }else{
-            //button.stop("a");
+            //fondo.addClass("boton-morado");
+            $.each(objMorado, function(k,v){
+                fondo.css({background: v});
+            });
+        } else {
+            EDGE_Plantilla.ready_actividades = false;
+            $.each(objRojo, function(k,v){
+                fondo.css({background: v});
+            });
         }
     });
     //console.log(EDGE_Plantilla.play_templateButtons);
+});
+
+$("body").on("EDGE_Actividad_Submit", function (evt) {
+    
 });
