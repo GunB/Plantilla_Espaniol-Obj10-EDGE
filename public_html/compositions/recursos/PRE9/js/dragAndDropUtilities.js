@@ -655,7 +655,6 @@ function ubicarDragsEnDrop(drags, drop) {
         if ((currentLeft + $(value[0]).width()) > (dropPosition.left + dropWidth))
         {
             currentTop += ($(value[0]).height() + (margen * 2));
-            console.log($(value[0]).height());
             currentLeft = dropPosition.left + margen;
         }
 

@@ -147,7 +147,6 @@ function inicializarPicks(sym) {
         pickObj.prop("descripcion", objPicks[i].descripcion);
         pickObj.prop("nombre", "PICK_" + i);
         pickObj.prop("current_state", "normal");
-		console.log(pickObj.prop("nombre")+" selected = "+ pickObj.prop("selected"));
     }
 
     if (contRespuestas > 1) {
@@ -220,13 +219,11 @@ function seleccionarPick(sym, nombrePick) {
 
 function deseleccionarPick(sym, nombrePick) {
     var pickObj = sym.$(nombrePick);
-	console.log("deseleccionar "+nombrePick+" "+pickObj.prop("selected"));
     if (pickObj.prop("selected")) {
         pickObj.prop("selected", false);
         cambiarEstadoPick(sym, nombrePick, "normal")
         pickObj.prop("correct", pickObj.prop("esRespuesta") === pickObj.prop("selected"));
     }
-	console.log(pickObj.prop("selected"));
 }
 
 //**********************************************************************************
