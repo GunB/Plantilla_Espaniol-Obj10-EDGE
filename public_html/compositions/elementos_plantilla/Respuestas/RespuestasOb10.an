@@ -135,7 +135,7 @@
 	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"viewStartY":"0",
 	"expanded:images/plantillaOB10_res1.PNG":"nil",
-	"TransitionIdCounter":"125",
+	"TransitionIdCounter":"145",
 	"CompZoomFactor":"100",
 	"StageZoomFactor":"10",
 	"pixelsPerMs":"0.12268435133563",
@@ -143,7 +143,7 @@
 	"expanded:images/medidor-02.png":"nil",
 	"usedBOM":"false",
 	"nextElementColorIndex":"8",
-	"stage-Default Timeline_playhead_ms":"1250",
+	"stage-Default Timeline_playhead_ms":"0",
 	"expanded:images/plantillaOB10_res3.PNG":"nil",
 	"expanded:images/medidor-01.png":"nil",
 	"symbol_respuesta_2":{

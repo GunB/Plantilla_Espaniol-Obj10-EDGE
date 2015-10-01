@@ -61,7 +61,7 @@
                     labels: {
                         "complete": 0,
                         "confirmacion": 500,
-                        "puntos": 1250
+                        "puntos": 1000
                     },
                     data: [
                         [
@@ -254,7 +254,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid135",
+                            "eid145",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -265,7 +265,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid136",
+                            "eid146",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -276,7 +276,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid137",
+                            "eid147",
                             "msTransformOrigin",
                             0,
                             0,
@@ -287,7 +287,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid138",
+                            "eid148",
                             "-o-transform-origin",
                             0,
                             0,
@@ -298,7 +298,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid139",
+                            "eid149",
                             "transform-origin",
                             0,
                             0,
@@ -359,7 +359,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid140",
+                            "eid150",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -370,7 +370,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid141",
+                            "eid151",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -381,7 +381,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid142",
+                            "eid152",
                             "msTransformOrigin",
                             0,
                             0,
@@ -392,7 +392,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid143",
+                            "eid153",
                             "-o-transform-origin",
                             0,
                             0,
@@ -403,7 +403,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid144",
+                            "eid154",
                             "transform-origin",
                             0,
                             0,
