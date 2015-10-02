@@ -474,19 +474,19 @@ $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R3.button:
-            mostrar_pagina("4");
+            mostrar_pagina("5");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R4.button:
-            mostrar_pagina("6");
-            play_buttons(evt);
-            break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
             mostrar_pagina("8");
             play_buttons(evt);
             break;
-        case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
+        case "Stage_" + EDGE_Plantilla.button_nav.R5.button:
             mostrar_pagina("10");
+            play_buttons(evt);
+            break;
+        case "Stage_" + EDGE_Plantilla.button_nav.R6.button:
+            mostrar_pagina("12");
             play_buttons(evt);
             break;
         case "Stage_" + EDGE_Plantilla.button_nav.R7.button:

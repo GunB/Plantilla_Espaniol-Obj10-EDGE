@@ -1,0 +1,43 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Seleccione las palabras que considere adecuadas y le permitan construir una oración.",
+    "picks": {
+        "1": {
+            "descripcion": "Éllos",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "Nosotros",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "Ella",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "soy",
+            "esRespuesta": false
+        },
+         "5": {
+            "descripcion": "son",
+            "esRespuesta": true
+        },
+         "6": {
+            "descripcion": "es",
+            "esRespuesta": false
+        },
+         "7": {
+            "descripcion": "bomberos",
+            "esRespuesta": true
+        },
+         "8": {
+            "descripcion": "ejecutivo",
+            "esRespuesta": false
+        },
+         "9": {
+            "descripcion": "abogadas",
+            "esRespuesta": false
+        }
+        
+    }
+}

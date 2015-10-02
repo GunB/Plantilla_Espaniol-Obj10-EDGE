@@ -1,0 +1,22 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Seleccione las vocales que tiene la palabra árbol.",
+    "picks": {
+        "1": {
+            "descripcion": "anillo",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "caja",
+            "esRespuesta": false
+        },
+        "3": {
+            "descripcion": "celular",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "llanta",
+            "esRespuesta": true
+        }    
+    }
+}

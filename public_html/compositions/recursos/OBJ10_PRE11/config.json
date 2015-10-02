@@ -1,0 +1,22 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Cuál es la palabra más adecuada para completar la siguiente frase.",
+    "picks": {
+        "1": {
+            "descripcion": "Rectangular, café, lisa, grande.",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "Cuadrada, café, lisa, grande",
+            "esRespuesta": false
+        },
+         "3": {
+            "descripcion": "Rectangular, café, áspera, grande",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "Rectangular, negra, lisa, grande",
+            "esRespuesta": false
+        }        
+    }
+}

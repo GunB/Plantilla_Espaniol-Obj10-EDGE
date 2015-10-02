@@ -7,7 +7,7 @@
         "1": {
             "type": "portada",
             "recurso": "1",
-            "url": "recursos/R1/Ob10.html",
+            "url": "recursos/R10_inicio/Ob10.html",
             "al_cerrar": {
                 "cargar": "2",
                 "cambia_color": "2"
@@ -20,7 +20,7 @@
             "type": "actividad",
             "recurso": "2",
             "actividad": "pick_many",
-            "url": "recursos/PRE1/lec1_obj10-01.html",
+            "url": "recursos/OBJ10_PRE1/esn1le02ob10pre1.html",
             "interaction": {
                 "ALL": true
             },
@@ -34,7 +34,7 @@
             "type": "actividad",
             "recurso": "3",
             "actividad": "pick_many",
-            "url": "recursos/PRE2/lec1_obj10-02.html",
+            "url": "recursos/OBJ10_PRE2/esn1le02ob10pre2.html",
             "interaction": {
                 "ALL": true
             },
@@ -48,21 +48,21 @@
             "type": "actividad",
             "recurso": "4",
             "actividad": "pick_many",
-            "url": "recursos/PRE3/lec1_obj10-03.html",
+            "url": "recursos/OBJ10_PRE3/esn1le02ob10pre3.html",
             "interaction": {
                 "ALL": true
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
             "plantilla" : {
-                "button" : "R3"
+                "button" : "R2"
             }
         },
         "5": {
             "type": "actividad",
             "recurso": "5",
             "actividad": "pick_many",
-            "url": "recursos/PRE4/lec1_obj10-04.html",
+            "url": "recursos/OBJ10_PRE4/esn1le02ob10pre4.html",
             "interaction": {
                 "ALL": true
             },
@@ -76,21 +76,35 @@
             "type": "actividad",
             "recurso": "6",
             "actividad": "pick_many",
-            "url": "recursos/PRE5/lec1_obj10-05.html",
+            "url": "recursos/OBJ10_PRE5/esn1le02ob10pre5.html",
             "interaction": {
                 "ALL": true
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
             "plantilla" : {
-                "button" : "R4"
+                "button" : "R3"
             }
         },
         "7": {
             "type": "actividad",
             "recurso": "7",
             "actividad": "pick_many",
-            "url": "recursos/PRE6/lec1_obj10-06.html",
+            "url": "recursos/OBJ10_PRE6/esn1le02ob10pre6.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "plantilla" : {
+                "button" : "R3"
+            }
+        },
+        "8": {
+            "type": "actividad",
+            "recurso": "8",
+            "actividad": "pick_many",
+            "url": "recursos/OBJ10_PRE7/esn1le02ob10pre7.html",
             "interaction": {
                 "ALL": true
             },
@@ -100,39 +114,53 @@
                 "button" : "R4"
             }
         },
-        "8": {
-            "type": "actividad",
-            "recurso": "8",
-            "actividad": "pick_many",
-            "url": "recursos/PRE7/lec1_obj10-07.html",
-            "interaction": {
-                "ALL": true
-            },
-            "titulo": "Practiquemos",
-            "subtitulo": "Las letras",
-            "plantilla" : {
-                "button" : "R5"
-            }
-        },
         "9": {
             "type": "actividad",
             "recurso": "9",
             "actividad": "pick_many",
-            "url": "recursos/PRE8/lec1_obj10-08.html",
+            "url": "recursos/OBJ10_PRE8/esn1le02ob10pre8.html",
             "interaction": {
                 "ALL": true
             },
             "titulo": "Practiquemos",
             "subtitulo": "Las letras",
             "plantilla" : {
-                "button" : "R5"
+                "button" : "R4"
             }
         },
         "10": {
             "type": "actividad",
             "recurso": "10",
             "actividad": "drag_drop",
-            "url": "recursos/PRE9/lec1_obj10-09.html",
+            "url": "recursos/OBJ10_PRE9/esn1le02ob10pre9.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "plantilla" : {
+                "button" : "R5"
+            }
+        },
+        "11": {
+            "type": "actividad",
+            "recurso": "11",
+            "actividad": "pick_many",
+            "url": "recursos/OBJ10_PRE10/esn1le02ob10pre10.html",
+            "interaction": {
+                "ALL": true
+            },
+            "titulo": "Practiquemos",
+            "subtitulo": "Las letras",
+            "plantilla" : {
+                "button" : "R5"
+            }
+        },
+        "12": {
+            "type": "actividad",
+            "recurso": "11",
+            "actividad": "pick_many",
+            "url": "recursos/OBJ10_PRE11/esn1le02ob10pre11.html",
             "interaction": {
                 "ALL": true
             },
@@ -142,11 +170,11 @@
                 "button" : "R6"
             }
         },
-        "11": {
+        "13": {
             "type": "actividad",
             "recurso": "11",
             "actividad": "pick_many",
-            "url": "recursos/PRE10/lec1_obj10-10.html",
+            "url": "recursos/OBJ10_PRE12/esn1le02ob10pre12.html",
             "interaction": {
                 "ALL": true
             },

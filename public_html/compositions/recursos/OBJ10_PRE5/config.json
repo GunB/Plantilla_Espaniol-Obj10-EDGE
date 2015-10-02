@@ -1,0 +1,51 @@
+{
+    "num_intentos": 2,
+    "pregunta": "Escuche y relacione cada audio con su color correspondiente.",
+    "tipo": "uno a muchos",
+    "drags": {
+        "1": {
+            "descripcion": "amarillo"
+        },
+        "2": {
+            "descripcion": "café"
+        },
+        "3": {
+            "descripcion": "rojo"
+        },
+        "4": {
+            "descripcion": "gris"
+        },
+        "5": {
+            "descripcion": "verde"
+        },
+        "6": {
+            "descripcion": "azul"        
+        }
+    },
+    "drops": {
+        "1": {
+            "descripcion": "rojo",
+            "accepted": ["3"]
+        },
+        "2": {
+            "descripcion": "azul",
+            "accepted": ["6"]
+        },
+          "3": {
+            "descripcion": "amarillo",
+            "accepted": ["1"]
+        },
+          "4": {
+            "descripcion": "café",
+            "accepted": ["2"]
+        },
+          "5": {
+            "descripcion": "verde",
+            "accepted": ["5"]
+        },
+          "6": {
+            "descripcion": "gris",
+            "accepted": ["4"]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Describa la imagen por medio de un enunciado.",
+    "picks": {
+        "1": {
+            "descripcion": "El río seco",
+            "esRespuesta": false
+        },
+        "2": {
+            "descripcion": "El río largo",
+            "esRespuesta": true
+        },
+         "3": {
+            "descripcion": "El río profundo",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "El río pequeño",
+            "esRespuesta": false
+        }        
+    }
+}
+
+
+
+
+
+

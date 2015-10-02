@@ -1,0 +1,28 @@
+{
+    "num_intentos": 2,
+    "pregunta":"Escuche el audio y seleccione la respuesta correcta.",
+    "picks": {
+        "1": {
+            "descripcion": "El gato blanco es gordo",
+            "esRespuesta": true
+        },
+        "2": {
+            "descripcion": "El gato gris es flaco",
+            "esRespuesta": false
+        },
+         "3": {
+            "descripcion": "Los gatos blancos son gordos",
+            "esRespuesta": false
+        },
+        "4": {
+            "descripcion": "El gato negro es gordo",
+            "esRespuesta": false
+        }        
+    }
+}
+
+
+
+
+
+
