@@ -16,6 +16,8 @@
         resources = [
         ],
         scripts = [
+		js + "jquery-1.10.2.js",
+		js + "respuestas.js"
         ],
         symbols = {
             "stage": {
@@ -44,6 +46,13 @@
                             symbolName: 'respuesta_3',
                             type: 'rect',
                             rect: ['-1830px', '0px', 'undefined', 'undefined', 'auto', 'auto']
+                        },
+                        {
+                            id: 'Submit',
+                            symbolName: 'Submit',
+                            type: 'rect',
+                            rect: ['808px', '395px', '213', '43', 'auto', 'auto'],
+                            cursor: 'pointer'
                         }
                     ],
                     style: {
@@ -60,8 +69,7 @@
                     autoPlay: true,
                     labels: {
                         "complete": 0,
-                        "confirmacion": 500,
-                        "puntos": 1000
+                        "confirmacion": 500
                     },
                     data: [
                         [
@@ -254,7 +262,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid145",
+                            "eid135",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -265,7 +273,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid146",
+                            "eid136",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -276,7 +284,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid147",
+                            "eid137",
                             "msTransformOrigin",
                             0,
                             0,
@@ -287,7 +295,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid148",
+                            "eid138",
                             "-o-transform-origin",
                             0,
                             0,
@@ -298,7 +306,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid149",
+                            "eid139",
                             "transform-origin",
                             0,
                             0,
@@ -359,7 +367,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid150",
+                            "eid140",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -370,7 +378,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid151",
+                            "eid141",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -381,7 +389,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid152",
+                            "eid142",
                             "msTransformOrigin",
                             0,
                             0,
@@ -392,7 +400,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid153",
+                            "eid143",
                             "-o-transform-origin",
                             0,
                             0,
@@ -403,7 +411,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid154",
+                            "eid144",
                             "transform-origin",
                             0,
                             0,
@@ -412,6 +420,72 @@
                             [100,50],
                             [100,50],
                             {valueTemplate: '@@0@@% @@1@@%'}
+                        ]
+                    ]
+                }
+            },
+            "Submit": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '1px', '213px', '43px', 'auto', 'auto'],
+                            borderRadius: ['23px', '23px', '23px', '23px 23px'],
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            id: 'RoundRect',
+                            opacity: '0.5',
+                            type: 'rect',
+                            fill: ['rgba(192,192,192,1)', [270, [['rgba(111,67,158,1.00)', 50], ['rgba(84,53,118,1.00)', 50]]]],
+                            c: [
+                            {
+                                rect: ['0px', '-1px', '213px', '31px', 'auto', 'auto'],
+                                font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal'],
+                                id: 'texto_4',
+                                text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"font-family: source-sans-pro, sans-serif; font-weight: 600; color: rgb(255, 255, 255); font-size: 25px;\">Enviar</span></p>',
+                                textShadow: ['rgba(0,0,0,0.65098)', 1, 1, 1],
+                                type: 'text'
+                            }]
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '213px', '43px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 2000,
+                    autoPlay: true,
+                    labels: {
+                        "desactivado": 0,
+                        "activado": 2000
+                    },
+                    data: [
+                        [
+                            "eid356",
+                            "opacity",
+                            0,
+                            0,
+                            "linear",
+                            "${RoundRect}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid355",
+                            "opacity",
+                            2000,
+                            0,
+                            "linear",
+                            "${RoundRect}",
+                            '0.5',
+                            '1'
                         ]
                     ]
                 }

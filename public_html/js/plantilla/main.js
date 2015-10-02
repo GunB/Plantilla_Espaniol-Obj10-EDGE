@@ -459,6 +459,9 @@ $("body").on("EDGE_Self_Plantilla_ClickMenuTools", function (evt) {
 });
 
 $("body").on("EDGE_Self_Plantilla_ClickNav", function (evt) {
+    if(!isEmpty(EDGE_Plantilla.block)){
+        return;
+    }
     EDGE_Plantilla.debug ? console.log(evt) : false;
     EDGE_Plantilla.debug ? console.log(evt.evt.currentTarget.id) : false;
     switch (evt.evt.currentTarget.id) {

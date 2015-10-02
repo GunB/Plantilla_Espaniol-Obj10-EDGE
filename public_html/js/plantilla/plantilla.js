@@ -284,7 +284,7 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
     if (isEmpty(EDGE_Plantilla.actividades_cargadas)) {
         last_actividad();
     }
-    
+
     EDGE_Plantilla.ready_actividades = true;
 
     console.log(EDGE_Plantilla.play_templateButtons);
@@ -335,12 +335,12 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
 
         if (objbul) {
             //fondo.addClass("boton-morado");
-            $.each(objMorado, function(k,v){
+            $.each(objMorado, function (k, v) {
                 fondo.css({background: v});
             });
         } else {
             EDGE_Plantilla.ready_actividades = false;
-            $.each(objRojo, function(k,v){
+            $.each(objRojo, function (k, v) {
                 fondo.css({background: v});
             });
         }
@@ -348,6 +348,38 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
     //console.log(EDGE_Plantilla.play_templateButtons);
 });
 
-$("body").on("EDGE_Actividad_Submit", function (evt) {
-    
+$(document).on("EDGE_Plantilla_RespuestasReady", function (evt) {
+    var value = EDGE_Plantilla.id_pagina_actual;
+    //console.log(value, "ENVIANDO EL SUBMIT");
+
+    var pagina = EDGE_Plantilla.config.paginas[value];
+    var stage = EDGE_Plantilla.config.paginas[value].stage;
+    var sym_contenedor = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.basic_contenedor_name.contenedor);
+    var objEvt = {
+        type: "EDGE_Recurso_Respuestas",
+        sym: stage,
+        identify: pagina,
+        ready: "none"
+    };
+
+    if (EDGE_Plantilla.ready_actividades) {
+        objEvt = merge_options(objEvt, {
+            ready: "confirmar"
+        });
+    }
+
+    $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger(objEvt);
+});
+
+$(document).on("EDGE_Plantilla_RespuestasReady", function (evt) {
+    var actividades = EDGE_Plantilla.actividades_cargadas;
+    var cont =0, sum =0;
+
+    $.each(EDGE_Plantilla.temp_scorm, function (k, v) {
+        cont++;
+        console.log(v);
+        if(v){
+            
+        }
+    });
 });

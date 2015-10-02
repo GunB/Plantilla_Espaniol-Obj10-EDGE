@@ -868,7 +868,9 @@
 
       Symbol.bindElementAction(compId, symbolName, "${btn_enviar}", "click", function(sym, e) {
          // introducir aquí código para clic de ratón
-         //do_submit(sym);
+         mostrar_pagina("respuestas");
+         play_buttons();
+
       });
       //Edge binding end
 

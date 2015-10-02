@@ -31,6 +31,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${Submit}", "click", function(sym, e) {
+         // introducir aquí código para clic de ratón
+         
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -71,5 +77,27 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    })("indicador");
    //Edge symbol end:'indicador'
+
+   //=========================================================
+   
+   //Edge symbol: 'Submit'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // introducir código aquí
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
+         // introducir código aquí
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("Submit");
+   //Edge symbol end:'Submit'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-22315124");
