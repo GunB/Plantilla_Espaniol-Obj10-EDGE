@@ -341,7 +341,7 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
                 fondo.css({background: v});
             });
         } else {
-            //EDGE_Plantilla.ready_actividades = false;
+            EDGE_Plantilla.ready_actividades = false;
             $.each(objRojo, function (k, v) {
                 fondo.css({background: v});
             });
