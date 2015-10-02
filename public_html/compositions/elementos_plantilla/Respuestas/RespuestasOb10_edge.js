@@ -139,13 +139,13 @@
                 content: {
                     dom: [
                         {
-                            type: 'text',
                             rect: ['0px', '179px', '1830px', '108px', 'auto', 'auto'],
-                            align: 'center',
+                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', ''],
+                            text: '<p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">Complete la evaluación y así podra enviar sus respuestas.</p>',
                             id: 'Text',
                             textStyle: ['', '', '0px', '', ''],
-                            text: '<p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">Complete la evaluación y así podra enviar sus respuestas.</p>',
-                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', '']
+                            align: 'center',
+                            type: 'text'
                         }
                     ],
                     style: {
@@ -172,13 +172,13 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '179px', '1830px', '182px', 'auto', 'auto'],
                             font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', ''],
-                            align: 'center',
+                            type: 'text',
+                            textStyle: ['', '', '30px', '', ''],
                             id: 'TextCopy',
                             text: '<p style=\"margin: 0px;\">​Por favor haga clic en el botón enviar para ver sus resultados.</p><p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">​Usted no podrá modificarlos una vez haya realizado este paso.</p><p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">​<span style=\"font-style: italic; font-weight: 400;\">Gracias por su participacion</span></p><p style=\"margin: 0px;\">​</p>',
-                            textStyle: ['', '', '30px', '', ''],
-                            type: 'text'
+                            align: 'center',
+                            rect: ['0px', '179px', '1830px', '182px', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
@@ -239,12 +239,18 @@
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             type: 'ellipse',
                             fill: ['rgba(192,192,192,1)']
+                        },
+                        {
+                            id: 'texto_porcentaje',
+                            symbolName: 'texto_porcentaje',
+                            rect: ['869', '523', '91', '33', 'auto', 'auto'],
+                            type: 'rect'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
                             isStage: 'true',
-                            rect: [undefined, undefined, '1830px', '780px']
+                            rect: [undefined, undefined, '91px', '33px']
                         }
                     }
                 },
@@ -264,7 +270,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid158",
+                            "eid148",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -275,7 +281,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid159",
+                            "eid149",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -286,7 +292,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid160",
+                            "eid150",
                             "msTransformOrigin",
                             0,
                             0,
@@ -297,7 +303,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid161",
+                            "eid151",
                             "-o-transform-origin",
                             0,
                             0,
@@ -308,7 +314,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid162",
+                            "eid152",
                             "transform-origin",
                             0,
                             0,
@@ -331,16 +337,15 @@
                 content: {
                     dom: [
                         {
+                            rect: ['0px', '0px', '202px', '38px', 'auto', 'auto'],
                             id: 'medidor-02',
                             type: 'image',
-                            rect: ['0px', '0px', '202px', '38px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/medidor-02.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '202px', '38px']
+                            rect: [null, null, '202px', '38px']
                         }
                     }
                 },
@@ -370,7 +375,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid163",
+                            "eid153",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -381,7 +386,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid164",
+                            "eid154",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -392,7 +397,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid165",
+                            "eid155",
                             "msTransformOrigin",
                             0,
                             0,
@@ -403,7 +408,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid166",
+                            "eid156",
                             "-o-transform-origin",
                             0,
                             0,
@@ -414,7 +419,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid167",
+                            "eid157",
                             "transform-origin",
                             0,
                             0,
@@ -440,18 +445,18 @@
                             type: 'rect',
                             borderRadius: ['23px', '23px', '23px', '23px 23px'],
                             id: 'RoundRect',
-                            opacity: '0.5',
-                            rect: ['0px', '1px', '213px', '43px', 'auto', 'auto'],
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            rect: ['0px', '1px', '213px', '43px', 'auto', 'auto'],
+                            opacity: '0.5',
                             fill: ['rgba(192,192,192,1)', [270, [['rgba(111,67,158,1.00)', 50], ['rgba(84,53,118,1.00)', 50]]]],
                             c: [
                             {
-                                font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal'],
                                 type: 'text',
+                                rect: ['0px', '-1px', '213px', '31px', 'auto', 'auto'],
                                 id: 'texto_4',
                                 text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"font-family: source-sans-pro, sans-serif; font-weight: 600; color: rgb(255, 255, 255); font-size: 25px;\">Enviar</span></p>',
                                 textShadow: ['rgba(0,0,0,0.65098)', 1, 1, 1],
-                                rect: ['0px', '-1px', '213px', '31px', 'auto', 'auto']
+                                font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal']
                             }]
                         }
                     ],
@@ -489,6 +494,106 @@
                             '0.5',
                             '1'
                         ]
+                    ]
+                }
+            },
+            "text_percent": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            font: ['source-sans-pro, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '600', 'none', 'normal', 'break-word', 'normal'],
+                            type: 'text',
+                            align: 'center',
+                            id: 'texto_4',
+                            textStyle: ['', '', '', '', 'none'],
+                            text: '<p style=\"margin: 0px; font-family: source-sans-pro, sans-serif; font-weight: 600; font-style: normal; text-decoration: none; font-size: 30px; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-align: center; text-indent: 0px; line-height: normal;\">100%</p>',
+                            rect: ['0px', '0px', '91px', '33px', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '91px', '33px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "text_percent_1": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            font: ['source-sans-pro, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '600', 'none', 'normal', 'break-word', 'normal'],
+                            type: 'text',
+                            align: 'center',
+                            id: 'texto_4',
+                            textStyle: ['', '', '', '', 'none'],
+                            text: '<p style=\"margin: 0px; font-family: source-sans-pro, sans-serif; font-weight: 600; font-style: normal; text-decoration: none; font-size: 30px; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-align: center; text-indent: 0px; line-height: normal;\">100%</p>',
+                            rect: ['0px', '0px', '91px', '33px', 'auto', 'auto']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            rect: [null, null, '91px', '33px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
+                    ]
+                }
+            },
+            "texto_porcentaje": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['-1px', '0px', '91px', '33px', 'auto', 'auto'],
+                            textStyle: ['', '', '', '', 'none'],
+                            font: ['source-sans-pro, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '600', 'none', 'normal', 'break-word', 'normal'],
+                            id: 'texto_4',
+                            text: '<p style=\"margin: 0px; font-family: source-sans-pro, sans-serif; font-weight: 600; font-style: normal; text-decoration: none; font-size: 30px; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-align: center; text-indent: 0px; line-height: normal;\">100%</p>',
+                            align: 'center',
+                            type: 'text'
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '91px', '33px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 0,
+                    autoPlay: true,
+                    data: [
+
                     ]
                 }
             }

@@ -105,4 +105,28 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    })("Submit");
    //Edge symbol end:'Submit'
 
+   //=========================================================
+   
+   //Edge symbol: 'text_percent'
+   (function(symbolName) {   
+   
+   })("text_percent");
+   //Edge symbol end:'text_percent'
+
+   //=========================================================
+   
+   //Edge symbol: 'text_percent_1'
+   (function(symbolName) {   
+   
+   })("text_percent_1");
+   //Edge symbol end:'text_percent_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'texto_porcentaje'
+   (function(symbolName) {   
+   
+   })("texto_porcentaje");
+   //Edge symbol end:'texto_porcentaje'
+
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-22315124");

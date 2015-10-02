@@ -38,6 +38,8 @@ $("body").on("EDGE_Recurso_Respuestas", function (evt) {
             var sec = (( (5 * porc) / 100) * 1000);
             //console.log(sec, porc, evt.points);
             evt.sym.getSymbol("respuesta_3").getSymbol("indicador").stop(sec);
+            var text = evt.sym.getSymbol("respuesta_3").$("texto_porcentaje");
+            text.find("p").html(porc + "%");
             //var medidor = buscar_sym(evt.sym, ["respuesta_3", "indicador"]);
             //medidor.play();
             break;
