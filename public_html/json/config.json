@@ -161,7 +161,10 @@
             "recurso": "12",
             "url": "elementos_plantilla/Respuestas/RespuestasOb10.html",
             "titulo": "Resultados",
-            "subtitulo": "Las letras"
+            "subtitulo": "Las letras",
+            "plantilla" : {
+                "button" : "R7"
+            }
         },
         "vocabulario": {
             "url": "anexos/vocabulario/vocabulario.html",

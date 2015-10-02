@@ -4,10 +4,24 @@
  * and open the template in the editor.
  */
 
+function buscar_sym(sym, arrSymSearch, boolJQUERY) {
+    var temp = sym;
+    $.each(arrSymSearch, function (index, value) {
+        //EDGE_Plantilla.debug ? console.log(temp, index, value, arrSymSearch) : false;
+
+        if (!isEmpty(boolJQUERY) && index === arrSymSearch.length - 1) {
+            temp = temp.$(value);
+        } else {
+            temp = temp.getSymbol(value);
+        }
+
+    });
+    //EDGE_Plantilla.debug ? console.log(temp, arrSymSearch, boolJQUERY) : false;
+    return temp;
+}
 
 $("body").on("EDGE_Recurso_promiseCreated", function (evt) {
     enviarEventoCambio();
-    console.warn(evt);
 });
 
 $("body").on("EDGE_Recurso_Respuestas", function (evt) {
@@ -15,8 +29,17 @@ $("body").on("EDGE_Recurso_Respuestas", function (evt) {
         case "none":
             //evt.sym.play("confirmacion");
             break;
-        case "confirmacion":
+        case "confirmar":
             evt.sym.play("confirmacion");
+            break;
+        case "finale":
+            evt.sym.play("finale");
+            var porc = parseInt(evt.points);
+            var sec = (( (5 * porc) / 100) * 1000);
+            //console.log(sec, porc, evt.points);
+            evt.sym.getSymbol("respuesta_3").getSymbol("indicador").stop(sec);
+            //var medidor = buscar_sym(evt.sym, ["respuesta_3", "indicador"]);
+            //medidor.play();
             break;
     }
 });

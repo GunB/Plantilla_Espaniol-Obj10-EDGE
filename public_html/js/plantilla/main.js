@@ -265,7 +265,7 @@ function load_pages(sym_contenedor, strPagina, pagina, objRetro) {
     promise.done(function (comp) {
         
         var stage = comp.getStage();
-        console.log(sym_contenedor);
+        //console.log(sym_contenedor);
         
         EDGE_Plantilla.config.paginas[strPagina].stage = stage;
         $(stage.ele).prop("ed_identify", pagina);
@@ -357,7 +357,7 @@ $("body").on("EDGE_Container_loaded", function (evt) {
     EDGE_Plantilla.config.default.url_pages =
             url.substring(0, url.lastIndexOf('/'))
             + "/" + EDGE_Plantilla.config.default.url_pages;
-    console.log("Paginas a cargar... ", EDGE_Plantilla.config.default.default_page);
+    EDGE_Plantilla.debug ? console.log("Paginas a cargar... ", EDGE_Plantilla.config.default.default_page) : false;
 
     if (typeof EDGE_Plantilla.config.default.default_page === "string") {
         mostrar_pagina(EDGE_Plantilla.config.default.default_page);

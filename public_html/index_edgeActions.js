@@ -245,7 +245,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_7}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 7);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",
@@ -273,7 +273,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_6}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 6);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",
@@ -301,7 +301,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_5}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 5);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",
@@ -329,7 +329,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_4}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 4);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",
@@ -357,7 +357,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_3}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 3);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",
@@ -385,7 +385,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_2}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 2);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",
@@ -413,7 +413,7 @@
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${btnr_1}", "click", function (sym, e) {
-            cambiarColorBordes(sym, 1);
+            
             
             $("body").trigger({
                 type: "EDGE_Self_Plantilla_ClickNav",

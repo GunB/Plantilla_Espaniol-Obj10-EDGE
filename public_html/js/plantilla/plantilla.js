@@ -165,7 +165,9 @@ $("body").on("EDGE_Self_promiseCreating", function (evt) {
         if (page.type === "actividad") {
             var temp_data = actividad_actual();
             paginado.find("p").text(temp_data.key + 1 + " de " + (EDGE_Plantilla.last_actividad - 1));
-
+        }
+        
+        if(page.type === "actividad" || page.type === "recurso"){
             $.each(EDGE_Plantilla.button_nav, function (key, val) {
                 var borde = $("#Stage_" + val.button + "_borde");
                 if (page.plantilla.button === key) {
@@ -287,7 +289,7 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
 
     EDGE_Plantilla.ready_actividades = true;
 
-    console.log(EDGE_Plantilla.play_templateButtons);
+    //console.log(EDGE_Plantilla.play_templateButtons);
 
     $.each(EDGE_Plantilla.play_templateButtons, function (key, value) {
         var objbul = true;
@@ -307,7 +309,7 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
 
         var button = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.button_nav[key].button, true);
         var fondo = button.find("[id$=boton]");
-        fondo.removeClass("boton-rojo").removeClass("boton-morado").css({
+        fondo.css({
             "background-color": "",
             "background-image": "",
             "background": ""
@@ -339,7 +341,7 @@ $("body").on("EDGE_Plantilla_postSubmitApplied EDGE_Container_loaded", function 
                 fondo.css({background: v});
             });
         } else {
-            EDGE_Plantilla.ready_actividades = false;
+            //EDGE_Plantilla.ready_actividades = false;
             $.each(objRojo, function (k, v) {
                 fondo.css({background: v});
             });
@@ -369,17 +371,48 @@ $(document).on("EDGE_Plantilla_RespuestasReady", function (evt) {
     }
 
     $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger(objEvt);
+    
+    //console.log(EDGE_Plantilla.temp_scorm);
 });
 
-$(document).on("EDGE_Plantilla_RespuestasReady", function (evt) {
+$(document).on("EDGE_Plantilla_Terminar", function (evt) {
     var actividades = EDGE_Plantilla.actividades_cargadas;
+    EDGE_Plantilla.block = true;
     var cont =0, sum =0;
+    var value = EDGE_Plantilla.id_pagina_actual;
+    var pagina = EDGE_Plantilla.config.paginas[value];
+    var stage = EDGE_Plantilla.config.paginas[value].stage;
+    var sym_contenedor = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.basic_contenedor_name.contenedor);
+    
+    $.each(EDGE_Plantilla.play_templateButtons, function (key, value) {
+        var button = buscar_sym(EDGE_Plantilla.plantilla_sym, EDGE_Plantilla.button_nav[key].button, true);
+        var fondo = button.find("[id$=boton]");
+        fondo.css({
+            "background-color": "",
+            "background-image": "",
+            "background": ""
+        });
+    });
 
     $.each(EDGE_Plantilla.temp_scorm, function (k, v) {
         cont++;
-        console.log(v);
-        if(v){
-            
+        //console.log(v);
+        if(v.estado === "correct"){
+            sum++;
         }
     });
+    
+    var resp = (sum / cont) * 100;
+    
+    var objEvt = {
+        type: "EDGE_Recurso_Respuestas",
+        sym: stage,
+        identify: pagina,
+        ready: "finale",
+        points: resp
+    };
+
+    $('iframe', sym_contenedor.ele)[0].contentWindow.$('body').trigger(objEvt);
+    
+    //console.log(resp);
 });

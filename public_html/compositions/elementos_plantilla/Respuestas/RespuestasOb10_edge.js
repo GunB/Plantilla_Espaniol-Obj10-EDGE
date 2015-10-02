@@ -16,8 +16,8 @@
         resources = [
         ],
         scripts = [
-		js + "jquery-1.10.2.js",
-		js + "respuestas.js"
+            js+"jquery-1.10.2.js",
+            js+"respuestas.js"
         ],
         symbols = {
             "stage": {
@@ -46,13 +46,6 @@
                             symbolName: 'respuesta_3',
                             type: 'rect',
                             rect: ['-1830px', '0px', 'undefined', 'undefined', 'auto', 'auto']
-                        },
-                        {
-                            id: 'Submit',
-                            symbolName: 'Submit',
-                            type: 'rect',
-                            rect: ['808px', '395px', '213', '43', 'auto', 'auto'],
-                            cursor: 'pointer'
                         }
                     ],
                     style: {
@@ -69,7 +62,8 @@
                     autoPlay: true,
                     labels: {
                         "complete": 0,
-                        "confirmacion": 500
+                        "confirmacion": 500,
+                        "finale": 1000
                     },
                     data: [
                         [
@@ -145,13 +139,13 @@
                 content: {
                     dom: [
                         {
-                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', ''],
                             type: 'text',
+                            rect: ['0px', '179px', '1830px', '108px', 'auto', 'auto'],
                             align: 'center',
                             id: 'Text',
                             textStyle: ['', '', '0px', '', ''],
                             text: '<p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">Complete la evaluación y así podra enviar sus respuestas.</p>',
-                            rect: ['0px', '179px', '1830px', '108px', 'auto', 'auto']
+                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', '']
                         }
                     ],
                     style: {
@@ -178,13 +172,20 @@
                 content: {
                     dom: [
                         {
-                            type: 'text',
                             rect: ['0px', '179px', '1830px', '182px', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">​Por favor haga clic en el botón enviar para ver sus resultados.</p><p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">​Usted no podrá modificarlos una vez haya realizado este paso.</p><p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">​<span style=\"font-style: italic; font-weight: 400;\">Gracias por su participacion</span></p><p style=\"margin: 0px;\">​</p>',
-                            id: 'TextCopy',
-                            textStyle: ['', '', '30px', '', ''],
+                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', ''],
                             align: 'center',
-                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(51,51,51,1.00)', '900', 'none', '', 'break-word', '']
+                            id: 'TextCopy',
+                            text: '<p style=\"margin: 0px;\">​Por favor haga clic en el botón enviar para ver sus resultados.</p><p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">​Usted no podrá modificarlos una vez haya realizado este paso.</p><p style=\"margin: 0px;\">​</p><p style=\"margin: 0px;\">​<span style=\"font-style: italic; font-weight: 400;\">Gracias por su participacion</span></p><p style=\"margin: 0px;\">​</p>',
+                            textStyle: ['', '', '30px', '', ''],
+                            type: 'text'
+                        },
+                        {
+                            type: 'rect',
+                            id: 'Submit',
+                            symbolName: 'Submit',
+                            cursor: 'pointer',
+                            rect: ['808px', '395px', '213', '43', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -194,7 +195,7 @@
                     }
                 },
                 timeline: {
-                    duration: 0,
+                    duration: 2000,
                     autoPlay: true,
                     data: [
 
@@ -211,24 +212,24 @@
                 content: {
                     dom: [
                         {
-                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(79,45,110,1.00)', '900', 'none', '', 'break-word', ''],
-                            type: 'text',
-                            align: 'center',
-                            id: 'TextCopy',
+                            rect: ['0px', '179px', '1830px', '73px', 'auto', 'auto'],
                             textStyle: ['', '', '30px', '', ''],
+                            font: ['source-sans-pro, sans-serif', [40, 'px'], 'rgba(79,45,110,1.00)', '900', 'none', '', 'break-word', ''],
+                            id: 'TextCopy',
                             text: '<p style=\"margin: 0px;\">​Resultado:</p>',
-                            rect: ['0px', '179px', '1830px', '73px', 'auto', 'auto']
+                            align: 'center',
+                            type: 'text'
                         },
                         {
-                            rect: ['628px', '268px', '574px', '291px', 'auto', 'auto'],
                             id: 'medidor-01',
                             type: 'image',
+                            rect: ['628px', '268px', '574px', '291px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/medidor-01.png', '0px', '0px']
                         },
                         {
-                            rect: ['713', '521', '202', '38', 'auto', 'auto'],
                             id: 'indicador',
                             symbolName: 'indicador',
+                            rect: ['713', '521', '202', '38', 'auto', 'auto'],
                             type: 'rect'
                         },
                         {
@@ -242,7 +243,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1830px', '780px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1830px', '780px']
                         }
                     }
                 },
@@ -262,7 +264,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid135",
+                            "eid158",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -273,7 +275,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid136",
+                            "eid159",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -284,7 +286,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid137",
+                            "eid160",
                             "msTransformOrigin",
                             0,
                             0,
@@ -295,7 +297,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid138",
+                            "eid161",
                             "-o-transform-origin",
                             0,
                             0,
@@ -306,7 +308,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid139",
+                            "eid162",
                             "transform-origin",
                             0,
                             0,
@@ -329,15 +331,16 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '202px', '38px', 'auto', 'auto'],
                             id: 'medidor-02',
                             type: 'image',
+                            rect: ['0px', '0px', '202px', '38px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/medidor-02.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '202px', '38px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '202px', '38px']
                         }
                     }
                 },
@@ -367,7 +370,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid140",
+                            "eid163",
                             "-moz-transform-origin",
                             0,
                             0,
@@ -378,7 +381,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid141",
+                            "eid164",
                             "-ms-transform-origin",
                             0,
                             0,
@@ -389,7 +392,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid142",
+                            "eid165",
                             "msTransformOrigin",
                             0,
                             0,
@@ -400,7 +403,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid143",
+                            "eid166",
                             "-o-transform-origin",
                             0,
                             0,
@@ -411,7 +414,7 @@
                             {valueTemplate: '@@0@@% @@1@@%'}
                         ],
                         [
-                            "eid144",
+                            "eid167",
                             "transform-origin",
                             0,
                             0,
@@ -434,28 +437,27 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '1px', '213px', '43px', 'auto', 'auto'],
+                            type: 'rect',
                             borderRadius: ['23px', '23px', '23px', '23px 23px'],
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             id: 'RoundRect',
                             opacity: '0.5',
-                            type: 'rect',
+                            rect: ['0px', '1px', '213px', '43px', 'auto', 'auto'],
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             fill: ['rgba(192,192,192,1)', [270, [['rgba(111,67,158,1.00)', 50], ['rgba(84,53,118,1.00)', 50]]]],
                             c: [
                             {
-                                rect: ['0px', '-1px', '213px', '31px', 'auto', 'auto'],
                                 font: ['Arial, Helvetica, sans-serif', [24, ''], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'normal'],
+                                type: 'text',
                                 id: 'texto_4',
                                 text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"font-family: source-sans-pro, sans-serif; font-weight: 600; color: rgb(255, 255, 255); font-size: 25px;\">Enviar</span></p>',
                                 textShadow: ['rgba(0,0,0,0.65098)', 1, 1, 1],
-                                type: 'text'
+                                rect: ['0px', '-1px', '213px', '31px', 'auto', 'auto']
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '213px', '43px']
+                            rect: [null, null, '213px', '43px']
                         }
                     }
                 },
