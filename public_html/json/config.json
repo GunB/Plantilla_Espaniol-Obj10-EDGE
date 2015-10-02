@@ -33,7 +33,7 @@
         "3": {
             "type": "actividad",
             "recurso": "3",
-            "actividad": "pick_many",
+            "actividad": "select",
             "url": "recursos/OBJ10_PRE2/esn1le02ob10pre2.html",
             "interaction": {
                 "ALL": true
@@ -47,7 +47,7 @@
         "4": {
             "type": "actividad",
             "recurso": "4",
-            "actividad": "pick_many",
+            "actividad": "select",
             "url": "recursos/OBJ10_PRE3/esn1le02ob10pre3.html",
             "interaction": {
                 "ALL": true
@@ -61,7 +61,7 @@
         "5": {
             "type": "actividad",
             "recurso": "5",
-            "actividad": "pick_many",
+            "actividad": "select",
             "url": "recursos/OBJ10_PRE4/esn1le02ob10pre4.html",
             "interaction": {
                 "ALL": true
@@ -75,7 +75,7 @@
         "6": {
             "type": "actividad",
             "recurso": "6",
-            "actividad": "pick_many",
+            "actividad": "drag_drop",
             "url": "recursos/OBJ10_PRE5/esn1le02ob10pre5.html",
             "interaction": {
                 "ALL": true
@@ -131,7 +131,7 @@
         "10": {
             "type": "actividad",
             "recurso": "10",
-            "actividad": "drag_drop",
+            "actividad": "pick_many",
             "url": "recursos/OBJ10_PRE9/esn1le02ob10pre9.html",
             "interaction": {
                 "ALL": true
@@ -173,7 +173,7 @@
         "13": {
             "type": "actividad",
             "recurso": "11",
-            "actividad": "pick_many",
+            "actividad": "select",
             "url": "recursos/OBJ10_PRE12/esn1le02ob10pre12.html",
             "interaction": {
                 "ALL": true
